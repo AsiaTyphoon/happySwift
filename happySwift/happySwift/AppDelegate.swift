@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let homeVC = ViewController()
+        homeVC.title = "happySwift"
+        let rootVC = UINavigationController.init(rootViewController: homeVC)
+        window?.rootViewController = rootVC
+        window?.backgroundColor = UIColor.white
+
         return true
     }
 

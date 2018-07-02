@@ -13,6 +13,7 @@
 		D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */; };
 		D15EB88720E9F9A8009626DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88620E9F9A8009626DE /* Assets.xcassets */; };
 		D15EB88A20E9F9A8009626DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88820E9F9A8009626DE /* LaunchScreen.storyboard */; };
+		D15EB89220E9FDBB009626DE /* HSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D15EB88620E9F9A8009626DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15EB88920E9F9A8009626DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D15EB88820E9F9A8009626DE /* LaunchScreen.storyboard */,
 				D15EB88B20E9F9A8009626DE /* Info.plist */,
 				D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */,
+				D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */,
 			);
 			path = happySwift;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */,
+				D15EB89220E9FDBB009626DE /* HSCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
