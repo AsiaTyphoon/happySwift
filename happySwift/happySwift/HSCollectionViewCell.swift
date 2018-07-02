@@ -30,6 +30,7 @@ class HSCollectionViewCell: UICollectionViewCell {
         labelTitle.frame = CGRect(x: 0, y: 0, width: lw, height: lh)
         labelTitle.clipsToBounds = true
         labelTitle.layer.cornerRadius = 5
+        labelTitle.textAlignment = .center
     }
     
 }

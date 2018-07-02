@@ -1,0 +1,28 @@
+//0...10表示包含头尾的0到10之间所有的整数
+//0..<10表示包含头不包含尾的0到9之间所有的整数
+//0...10这种条件区间内不能出现任何的空格
+//如果不关心循环本身的索引，可以直接用下划线如下
+//在遍历数组的时候，Swift还提供了一种特别方便的方式（利用元祖）
+
+//
+let count = 20
+for i in 0 ..< count {
+print("i \(i)")
+}
+//不适用i
+for _ in 0 ..< count {
+print("count \(count)")
+}
+//
+for j in 0...count {
+print("j \(j)")
+}
+//
+for _ in 0...count {
+print(count)
+}
+//数组遍历
+let array = [1, 2, 3, 4, 5]
+for (index, value) in array.enumerated() {
+print("index: \(index) value: \(value)")
+}

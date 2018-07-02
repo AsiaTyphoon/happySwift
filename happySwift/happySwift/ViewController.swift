@@ -8,10 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIWebViewDelegate{
 
     let cellID = "cell_id"
-
+    var bundlePath: String?
+    
+    lazy var fileNames: NSMutableArray = {
+        return NSMutableArray.init()
+    }()
+    
     lazy var collectionView: UICollectionView = {
         let frame = self.view.frame
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -37,8 +42,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.view.addSubview(collectionView)
-        
-        
+        loadData()
+        collectionView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,7 +51,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    func loadData() {
+        //获取bundle路径
+        bundlePath = Bundle.main.path(forResource: "resources", ofType: "bundle")
+        guard let _ = bundlePath else { return }
+        //遍历bundle内的文件
+        let contents = try? FileManager.default.contentsOfDirectory(atPath: bundlePath!)
+        guard let _ = contents else { return }
+        
+        for (_, value) in contents!.enumerated() {
+            fileNames.add(value)
+        }
+        
+    }
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -56,17 +73,27 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return fileNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! HSCollectionViewCell
        
-        cell.labelTitle.text = "wowo"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! HSCollectionViewCell
+        cell.labelTitle.text = fileNames[indexPath.row] as? String
         
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        //获取bundle对象
+        guard let _ = bundlePath else { return }
+        let bundleResources = Bundle(path: bundlePath!)
+        guard let _ = bundleResources else { return }
+        let str = fileNames[indexPath.row] as? String
+        guard let _ = str else { return }
+        let fileUrl = bundleResources!.url(forAuxiliaryExecutable: str!)
+        print("filePath: \(String(describing: fileUrl))")
+    }
     
 }
