@@ -94,6 +94,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         guard let _ = str else { return }
         let fileUrl = bundleResources!.url(forAuxiliaryExecutable: str!)
         print("filePath: \(String(describing: fileUrl))")
+        
+        let showVC: HSShowViewController! = HSShowViewController()
+        showVC.fileUrl = fileUrl
+        self.navigationController?.pushViewController(showVC, animated: true)
     }
     
 }

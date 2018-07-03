@@ -15,6 +15,7 @@
 		D15EB88A20E9F9A8009626DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88820E9F9A8009626DE /* LaunchScreen.storyboard */; };
 		D15EB89220E9FDBB009626DE /* HSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */; };
 		D15EB89420EA0AB3009626DE /* resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D15EB89320EA0AB3009626DE /* resources.bundle */; };
+		D1FD0F6220EB704A003B0513 /* HSShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD0F6120EB704A003B0513 /* HSShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCollectionViewCell.swift; sourceTree = "<group>"; };
 		D15EB89320EA0AB3009626DE /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resources.bundle; sourceTree = "<group>"; };
+		D1FD0F6120EB704A003B0513 /* HSShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */,
 				D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */,
 				D15EB89320EA0AB3009626DE /* resources.bundle */,
+				D1FD0F6120EB704A003B0513 /* HSShowViewController.swift */,
 			);
 			path = happySwift;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FD0F6220EB704A003B0513 /* HSShowViewController.swift in Sources */,
 				D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */,
@@ -293,7 +297,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C736M4FU;
 				INFOPLIST_FILE = happySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +316,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36C736M4FU;
 				INFOPLIST_FILE = happySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
