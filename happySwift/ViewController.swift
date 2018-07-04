@@ -97,6 +97,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         
         let showVC: HSShowViewController! = HSShowViewController()
         showVC.fileUrl = fileUrl
+        showVC.title = str
         self.navigationController?.pushViewController(showVC, animated: true)
     }
     

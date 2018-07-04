@@ -1,0 +1,102 @@
+
+https://www.cnblogs.com/lurenq/p/6785781.html
+
+把上传Github的代码添加Cocoapods支持
+
+开始
+这里我将从最初的开始进行介绍，包括Github上创建项目已经上传项目，到最后的支持Cocoapods。
+步骤如下：
+代码上传Github
+创建podspec文件，并验证是否通过
+在Github上创建release版本
+注册CocoaPods账号
+上传代码到CocoaPods
+检查上传是否成功
+1 代码上传Github
+首先我们打开github.com，然后创建自己的项目工程：
+
+
+这里注意那个MIT License，在后面添加Cocoapods支持的时候会用到（稍后介绍）。然后点击创建即可。
+然后用SouceTree将代码down到本地，将自己的项目放到里面，文件夹如图所示：
+
+
+
+这里的LICENSE就是刚才说的MIT License添加的文件。KG_GCDTimerDemo是示例工程，KG_GCDTimer就是提供给他人使用的库
+然后提交到Github就可以了。
+
+2创建podspec文件
+我们使用终端到工程目录下：
+
+
+这里 KG_GCDTimer 就是pod添加市的名字（例如MBProgressHUD）。执行完后的结果：
+
+
+
+此时在工程文件夹下也会多一个KGGCDTimer.podspec文件。这里我用Sublime Text打开并做了如下编辑：
+https://guides.cocoapods.org/syntax/podspec.html#specification 详解
+
+
+
+
+接下来执行下面的命令进行验证：
+
+qiyankundeMacBook-Pro:KG qiyankun$ pod lib lint KG_GCDTimer.podspec
+
+
+
+当看到KGGCDTimer passed validation之后，就说明验证通过了。
+
+
+
+
+3 在Github上创建release版本
+
+
+
+
+
+
+
+点击Publish release即可。创建完成后如图所示：
+
+
+
+
+
+4 注册CocoaPods账号
+执行命令行：
+pod trunk register 邮箱地址 ‘用户名’ —description='描述信息'
+打开邮件中的链接, 这样就成功注册了Cocoapods账号。
+
+
+可以用
+pod trunk me
+检查是否创建成功。
+
+5 上传代码到CocoaPods
+
+首先检测文件格式的有效性：
+pod spec lint
+
+
+警告可以使用 —allow-warnings忽略.
+
+出现passed validation就说明通过验证了。然后执行：
+pod trunk push xxx.podspec —allow-warnings
+
+
+等待上次成功
+
+6 检查上传是否成功
+使用
+pod search XXX
+
+
+参考文档：
+// 执行pod spec lint 错误锦集
+0, http://www.jianshu.com/p/283584683b0b
+//
+1, http://www.cnblogs.com/zhanggui/p/6003481.html
+2, http://www.cocoachina.com/ios/20160415/15939.html
+3, http://www.cocoachina.com/ios/20160907/17501.html
+4, https://cocoapods.org/
