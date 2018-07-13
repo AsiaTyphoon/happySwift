@@ -1,0 +1,39 @@
+
+/*
+
+利用runtime方法绑定属性值
+
+public func objc_setAssociatedObject(_ object: Any, _ key: UnsafeRawPointer, _ value: Any?, _ policy: objc_AssociationPolicy)
+
+public func objc_getAssociatedObject(_ object: Any, _ key: UnsafeRawPointer) -> Any?
+
+注意参数key的类型为：UnsafeRawPointer（const void * 不安全指针），而我们经常使用的String（字符串）来区分key，所以需要做的就是key的类型转换
+
+UnsafeRawPointer没有用String做参数的初始化方法，但是有以Int做参数的初始化方法，所以
+需要将String转为Int，字符串的hashValue (哈希值)和字符串是一一对应，推荐此方法
+
+推荐写法
+extension Data {
+
+struct RuntimeKey {
+static let keyfirst = UnsafePointer<Any>.init(bitPattern: "KeyFirst".hashValue)
+}
+
+var exitenName: String? {
+set {
+objc_setAssociatedObject(self, Data.RuntimeKey.keyfirst!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+}
+
+get {
+return objc_getAssociatedObject(self, Data.RuntimeKey.keyfirst!) as? String
+}
+}
+
+}
+
+
+
+
+
+*/
+

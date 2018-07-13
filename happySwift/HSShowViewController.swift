@@ -25,8 +25,12 @@ class HSShowViewController: UIViewController {
         guard let g_data = try? Data.init(contentsOf: g_fileUrl) else {
             return
         }
-        let str = String.init(data: g_data, encoding: .utf8)
+        var str = String.init(data: g_data, encoding: .utf8)
         textView.text = str
+
+//        let s = str?.replacingOccurrences(of: "let", with: "wowo")
+//        textView.text = s
+
         
     }
 

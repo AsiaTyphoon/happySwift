@@ -1,0 +1,4 @@
+
+let str = "1234" 
+let address = String(format: "%p", str)
+print(address)
