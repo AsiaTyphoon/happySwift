@@ -1,0 +1,61 @@
+
+iOS中UITextfield和UITextView的键盘使用很方便，不多说
+下面说说UIWebView的键盘使用
+(1)UITextEffectsWindow
+这是iOS8引入的一个新window，是键盘所在的window。它的windowLevel是10，高于UIWindowLevelNormal。
+(2)UIRemoteKeyboardWindow
+iOS9之后,新增了一个类型为 UIRemoteKeyboardWindow 的窗口用来显示键盘按钮。
+
+
+//下面是具体用法
+override func viewWillAppear(_ animated: Bool) {
+super.viewWillAppear(animated)
+
+// 监听键盘弹起，更改顶部工具栏
+NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+}
+
+@objc func keyboardWillShow(noti: NSNotification) {
+perform(#selector(removerBar))
+}
+
+func removerBar() {
+
+// Locate non-UIWindow.
+
+var keyboardWindow: UIWindow?
+
+for testWindow in UIApplication.shared.windows {
+//键盘所在window
+if testWindow.isKind(of: NSClassFromString("UITextEffectsWindow")!) {
+keyboardWindow = testWindow
+break
+}
+}
+
+if keyboardWindow == nil {
+return
+}
+
+// Locate UIWebFormView.
+for firstView in keyboardWindow!.subviews {
+// iOS 5 sticks the UIWebFormView inside a UIPeripheralHostView.
+if firstView.isKind(of: NSClassFromString("UIInputSetContainerView")!) {
+for secondView in firstView.subviews {
+if secondView.isKind(of: NSClassFromString("UIInputSetHostView")!) {
+for thirdView in secondView.subviews {
+if thirdView.isKind(of: NSClassFromString("UIKBInputBackdropView")!) {
+//键盘背景
+
+} else if thirdView.isKind(of: NSClassFromString("UIWebFormAccessory")!) {
+//键盘顶部的工具栏
+thirdView.addSubview(tAccessoryView())
+}
+}
+}
+}
+}
+
+}//for end
+
+}

@@ -19,8 +19,10 @@ class ViewController: UIViewController, UIWebViewDelegate{
     
     lazy var collectionView: UICollectionView = {
         let frame = self.view.frame
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: frame.size.width-20, height: 50)
+        let layout = DSCollectionViewFlowLayout(.left)
+        
+        layout.scrollDirection = .vertical
+        layout.estimatedItemSize = CGSize(width: frame.size.width - 20, height: 50)
         layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 10
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)

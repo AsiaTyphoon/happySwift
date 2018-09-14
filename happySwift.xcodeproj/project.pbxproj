@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */; };
 		D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87C20E9F9A7009626DE /* AppDelegate.swift */; };
 		D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87E20E9F9A7009626DE /* ViewController.swift */; };
 		D15EB88220E9F9A7009626DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88020E9F9A7009626DE /* Main.storyboard */; };
@@ -15,10 +16,14 @@
 		D15EB88A20E9F9A8009626DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88820E9F9A8009626DE /* LaunchScreen.storyboard */; };
 		D15EB89220E9FDBB009626DE /* HSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */; };
 		D15EB89420EA0AB3009626DE /* resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D15EB89320EA0AB3009626DE /* resources.bundle */; };
+		D171368F214B887E003BC94D /* HSCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171368E214B887D003BC94D /* HSCollectionViewFlowLayout.swift */; };
 		D1FD0F6220EB704A003B0513 /* HSShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD0F6120EB704A003B0513 /* HSShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-happySwift/Pods-happySwift.release.xcconfig"; sourceTree = "<group>"; };
+		B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happySwift/Pods-happySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		D15EB87920E9F9A7009626DE /* happySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15EB87C20E9F9A7009626DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15EB87E20E9F9A7009626DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +34,7 @@
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCollectionViewCell.swift; sourceTree = "<group>"; };
 		D15EB89320EA0AB3009626DE /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resources.bundle; sourceTree = "<group>"; };
+		D171368E214B887D003BC94D /* HSCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		D1FD0F6120EB704A003B0513 /* HSShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D69123730C1F7CF438B2D63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D15EB87020E9F9A7009626DE = {
 			isa = PBXGroup;
 			children = (
 				D15EB87B20E9F9A7009626DE /* happySwift */,
 				D15EB87A20E9F9A7009626DE /* Products */,
+				EF1EE9FE99F09D1D8E0C4112 /* Pods */,
+				3D69123730C1F7CF438B2D63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,10 +87,20 @@
 				D15EB88B20E9F9A8009626DE /* Info.plist */,
 				D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */,
 				D15EB89120E9FDBB009626DE /* HSCollectionViewCell.swift */,
+				D171368E214B887D003BC94D /* HSCollectionViewFlowLayout.swift */,
 				D15EB89320EA0AB3009626DE /* resources.bundle */,
 				D1FD0F6120EB704A003B0513 /* HSShowViewController.swift */,
 			);
 			path = happySwift;
+			sourceTree = "<group>";
+		};
+		EF1EE9FE99F09D1D8E0C4112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */,
+				9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D15EB88E20E9F9A8009626DE /* Build configuration list for PBXNativeTarget "happySwift" */;
 			buildPhases = (
+				8A06D9698A5233CBB726C692 /* [CP] Check Pods Manifest.lock */,
 				D15EB87520E9F9A7009626DE /* Sources */,
 				D15EB87620E9F9A7009626DE /* Frameworks */,
 				D15EB87720E9F9A7009626DE /* Resources */,
+				6A0CAB34F38783AA588B51FC /* [CP] Embed Pods Frameworks */,
+				6CF40A8DE381DC8CAC40C89B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +173,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A0CAB34F38783AA588B51FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-happySwift/Pods-happySwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happySwift/Pods-happySwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF40A8DE381DC8CAC40C89B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happySwift/Pods-happySwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A06D9698A5233CBB726C692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-happySwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D15EB87520E9F9A7009626DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,6 +234,7 @@
 			files = (
 				D1FD0F6220EB704A003B0513 /* HSShowViewController.swift in Sources */,
 				D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */,
+				D171368F214B887E003BC94D /* HSCollectionViewFlowLayout.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */,
 				D15EB89220E9FDBB009626DE /* HSCollectionViewCell.swift in Sources */,
@@ -294,6 +379,7 @@
 		};
 		D15EB88F20E9F9A8009626DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,12 +393,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = slardar.happySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D15EB89020E9F9A8009626DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = slardar.happySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

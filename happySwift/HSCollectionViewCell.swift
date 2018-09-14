@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HSCollectionViewCell: UICollectionViewCell {
     
@@ -19,18 +20,16 @@ class HSCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        labelTitle.backgroundColor = UIColor.lightGray
-        self.addSubview(labelTitle)
-    }
-    
-    override func layoutSubviews() {
-        let lw = self.frame.size.width
-        let lh = self.frame.size.height
-        
-        labelTitle.frame = CGRect(x: 0, y: 0, width: lw, height: lh)
-        labelTitle.clipsToBounds = true
-        labelTitle.layer.cornerRadius = 5
+        backgroundColor = UIColor.lightGray
+        clipsToBounds = true
+        layer.cornerRadius = 5
         labelTitle.textAlignment = .center
+        self.addSubview(labelTitle)
+        labelTitle.snp.makeConstraints { (make) in
+            make.left.top.equalTo(5)
+            make.right.bottom.equalTo(-5)
+        }
+        
     }
     
 }

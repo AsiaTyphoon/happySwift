@@ -1,0 +1,66 @@
+
+//MARK:-  字符串替换
+func replaceHtml() {
+let html = "Rrrrrrrr<img src=\"http://www.baidu.com\" id=\"123456\"><div>Eeedffff</div><img src=\"http://www.sina.com\" id=\"456789\"><div><br></div>"
+
+
+let scanner = Scanner(string: html)
+var strs: [String] = []
+while scanner.isAtEnd == false {
+
+var str: NSString?
+
+//找到标签的起始位置
+scanner.scanUpTo("<img", into: nil)
+//找到标签的结束位置
+scanner.scanUpTo(">", into: &str)
+
+//截取目标字符串
+guard let endStr = str else { break }
+var newStr = (endStr as String) + ">"
+newStr = newStr.replacingOccurrences(of: "\"", with: "")
+strs.append(newStr)
+}
+
+print(strs)
+if let arr = strs.first?.components(separatedBy: "=") {
+print(arr.last)
+}
+
+}
+
+
+func enumDivFrom(html: String, beginStr: String, endStr: String) -> [String] {
+
+var strs: [String] = []
+
+if html.isEmpty { return strs }
+if beginStr.isEmpty { return strs }
+if endStr.isEmpty { return strs }
+
+let scanner = Scanner(string: html)
+while scanner.isAtEnd == false {
+
+var str: NSString?
+
+//找到标签的起始位置
+scanner.scanUpTo(beginStr, into: nil)
+//找到标签的结束位置
+scanner.scanUpTo(endStr, into: &str)
+
+//拼接目标字符串
+guard let reStr = str else { break }
+let newStr = (reStr as String) + endStr
+strs.append(newStr)
+}
+
+return strs
+}
+
+
+["<img src=http://www.baidu.com id=123456>", "<img src=http://www.sina.com id=456789>"]
+Optional("123456>")
+
+
+
+

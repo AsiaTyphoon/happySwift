@@ -1,0 +1,6 @@
+framework module Pods_happySwift {
+  umbrella header "Pods-happySwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
