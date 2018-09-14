@@ -14,7 +14,7 @@ enum DSAlignType: NSInteger {
     case right = 2
 }
 
-class DSCollectionViewFlowLayout: UICollectionViewFlowLayout {
+class HSCollectionViewFlowLayout: UICollectionViewFlowLayout {
     
     var betweenOfCell: CGFloat {
         didSet{

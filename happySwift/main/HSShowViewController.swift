@@ -22,23 +22,24 @@ class HSShowViewController: UIViewController {
         guard let g_fileUrl = fileUrl else {
             return
         }
-        guard let g_data = try? Data.init(contentsOf: g_fileUrl) else {
-            return
-        }
-        var str = String.init(data: g_data, encoding: .utf8)
-        textView.text = str
-
-//        let s = str?.replacingOccurrences(of: "let", with: "wowo")
-//        textView.text = s
-
         
+        do {
+            let g_data = try Data.init(contentsOf: g_fileUrl)
+            let str = String.init(data: g_data, encoding: .utf8)
+            textView.text = str
+        } catch {
+            print("init_data_error:\(error)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    deinit {
+        print("-----deinit-----\(self.classForCoder)")
+    }
 
     /*
     // MARK: - Navigation

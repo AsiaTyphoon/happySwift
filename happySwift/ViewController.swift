@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIWebViewDelegate{
+class ViewController: UIViewController {
 
-    let cellID = "cell_id"
-    var bundlePath: String?
+    struct ID {
+        static let cellID = "xxxID"
+        static let bundleName = "resources"
+        static let bundleType = "bundle"
+    }
     
-    lazy var fileNames: NSMutableArray = {
-        return NSMutableArray.init()
-    }()
+    var fileNames: [String] = []
+    var dataArrs: [[String : Any]] = []
     
     lazy var collectionView: UICollectionView = {
         let frame = self.view.frame
-        let layout = DSCollectionViewFlowLayout(.left)
+        let layout = HSCollectionViewFlowLayout(.left)
         
         layout.scrollDirection = .vertical
         layout.estimatedItemSize = CGSize(width: frame.size.width - 20, height: 50)
@@ -32,7 +34,7 @@ class ViewController: UIViewController, UIWebViewDelegate{
         tmpCollectionView.collectionViewLayout = layout
         tmpCollectionView.delegate = self
         tmpCollectionView.dataSource = self
-        tmpCollectionView.register(HSCollectionViewCell.classForCoder(), forCellWithReuseIdentifier: cellID)
+        tmpCollectionView.register(HSCollectionViewCell.classForCoder(), forCellWithReuseIdentifier: ID.cellID)
         tmpCollectionView.backgroundColor = UIColor.white
         
         return tmpCollectionView
@@ -54,16 +56,25 @@ class ViewController: UIViewController, UIWebViewDelegate{
     }
 
     func loadData() {
-        //获取bundle路径
-        bundlePath = Bundle.main.path(forResource: "resources", ofType: "bundle")
-        guard let _ = bundlePath else { return }
-        //遍历bundle内的文件
-        let contents = try? FileManager.default.contentsOfDirectory(atPath: bundlePath!)
-        guard let _ = contents else { return }
         
-        for (_, value) in contents!.enumerated() {
-            fileNames.add(value)
+        dataArrs.append([HS.type : HSType.ui, HS.title : "UI测试"])
+        
+        //获取bundle路径
+        guard let bundlePath = Bundle.main.path(forResource: ID.bundleName, ofType: ID.bundleType) else {
+            return
         }
+        //遍历bundle内的文件
+        do {
+            let contents = try FileManager.default.contentsOfDirectory(atPath: bundlePath)
+            for fileName in contents {
+//                fileNames.append(fileName)
+                let filePath = bundlePath + "/" + fileName
+                dataArrs.append([HS.type : HSType.file, HS.path : filePath, HS.title : fileName])
+            }
+        } catch {
+            print("read_bundle_error:\(error)")
+        }
+        
         
     }
 }
@@ -75,32 +86,43 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return fileNames.count
+//        return fileNames.count
+        return dataArrs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! HSCollectionViewCell
-        cell.labelTitle.text = fileNames[indexPath.row] as? String
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ID.cellID, for: indexPath) as? HSCollectionViewCell {
+            let dic = dataArrs[indexPath.row]
+            if let title = dic[HS.title] as? String {
+                cell.labelTitle.text = title
+            }
+            return cell
+        }
         
-        return cell
+        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        //获取bundle对象
-        guard let _ = bundlePath else { return }
-        let bundleResources = Bundle(path: bundlePath!)
-        guard let _ = bundleResources else { return }
-        let str = fileNames[indexPath.row] as? String
-        guard let _ = str else { return }
-        let fileUrl = bundleResources!.url(forAuxiliaryExecutable: str!)
-        print("filePath: \(String(describing: fileUrl))")
+        let dic = dataArrs[indexPath.row]
+        if let type = dic[HS.type] as? HSType {
+            if type == .ui {
+                let uiVC = HSUITestViewController()
+                if let title = dic[HS.title] as? String {
+                    uiVC.title = title
+                }
+                self.navigationController?.pushViewController(uiVC, animated: true)
+            } else if type == .file {
+                if let path = dic[HS.path] as? String, let title = dic[HS.title] as? String {
+                    let showVC: HSShowViewController! = HSShowViewController()
+                    showVC.fileUrl = URL(fileURLWithPath: path)
+                    showVC.title = title
+                    self.navigationController?.pushViewController(showVC, animated: true)
+                }
+            }
+        }
         
-        let showVC: HSShowViewController! = HSShowViewController()
-        showVC.fileUrl = fileUrl
-        showVC.title = str
-        self.navigationController?.pushViewController(showVC, animated: true)
     }
     
 }
