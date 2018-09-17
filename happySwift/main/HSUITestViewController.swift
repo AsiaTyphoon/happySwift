@@ -36,7 +36,7 @@ class HSUITestViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        view.backgroundColor = .brown
+        view.backgroundColor = .white
         
         dataArr.append([HS.title : "虚线框", HS.selector : #selector(testDot)])
         dataArr.append([HS.title : "进度条", HS.selector : #selector(testProgress)])
@@ -55,17 +55,23 @@ class HSUITestViewController: UIViewController {
     }
 
     @objc func testDot() {
-        print("kkkkkk")
+        
+        for subview in view.subviews {
+            if subview.isKind(of: HSDottedView.self) {
+                subview.removeFromSuperview()
+            }
+        }
+        
+        let dview = HSDottedView(frame: CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height - 100))
+        view.addSubview(dview)
     }
     
     @objc func testProgress() {
-        print("ddddd")
         
         let progress = HSProgressView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         progress.center = view.center
         progress.backgroundColor = .white
         view.addSubview(progress)
-//        progress.progress(0.8)
         
         
         var count: CGFloat = 0

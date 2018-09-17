@@ -45,7 +45,7 @@ class HSProgressView: UIView {
     // 进度条宽
     var plineWidth: CGFloat = 5 {
         didSet {
-            pradius = (MIN(frame.size.width, frame.size.height) - plineWidth) / 2
+            pradius = (min(frame.width, frame.height) - plineWidth) / 2
         }
     }
     
@@ -54,7 +54,7 @@ class HSProgressView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        pradius = (MIN(frame.size.width, frame.size.height) - plineWidth) / 2
+        pradius = (min(frame.width, frame.height) - plineWidth) / 2
         addShapeLayer()
     }
     

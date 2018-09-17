@@ -11,6 +11,56 @@ import Foundation
 extension NSObject {
     
     
+    func copyFrom(fromDic: NSDictionary) -> Void {
+        
+        var count: UInt32 = 0
+        
+        let proList = class_copyPropertyList(self.classForCoder, &count)
+        for i in 0..<Int(count) {
+            
+            let pro = proList![i]
+            //获取属性的c字符串
+            let proStr = property_getName(pro)
+            //获取属性的String字符串
+            let proName = String(utf8String: proStr)
+            
+            if let value = fromDic[proName!] {
+                //居然真的返回了<null>
+                if value is NSNull {
+                    
+                } else {
+                    self.setValue(value, forKey: proName!)
+                }
+            }
+        }
+        free(proList)
+    }
+    
+//    func toDic() -> [String : Any] {
+//        //只支持系统提供的数据结构，不然写入文件会失败
+//        var dic: [String : Any] = [:]
+//        var count: UInt32 = 0
+//        if let proList = class_copyPropertyList(self.classForCoder, &count) {
+//            for i in 0..<Int(count) {
+//                let pro = proList[i]
+//                //获取属性的c字符串
+//                let proStr = property_getName(pro) {
+//                    //获取属性的String字符串
+//                    if let proName = String(utf8String: proStr) {
+//                        if let value = value(forKey: proName) {
+//                            if proName != "bodyComponents" {
+//                                dic[proName] = value
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//            free(proList)
+//        }
+//        
+//        return dic
+//    }
+    
     /// GCD定时器倒计时
     /// - parameter timeInterval : 循环间隔时间
     /// - parameter repeatCount : 重复次数

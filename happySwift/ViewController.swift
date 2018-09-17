@@ -48,6 +48,8 @@ class ViewController: UIViewController {
         self.view.addSubview(collectionView)
         loadData()
         collectionView.reloadData()
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

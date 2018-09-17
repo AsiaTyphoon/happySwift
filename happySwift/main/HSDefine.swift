@@ -12,6 +12,4 @@ import UIKit
 var kSCREENW = UIScreen.main.bounds.width
 var kSCREENH = UIScreen.main.bounds.height
 
-func MIN(_ A: CGFloat, _ B: CGFloat) -> CGFloat {
-    if A > B { return B } else { return A }
-}
+
