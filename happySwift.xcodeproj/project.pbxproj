@@ -15,6 +15,7 @@
 		D15EB88720E9F9A8009626DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88620E9F9A8009626DE /* Assets.xcassets */; };
 		D15EB88A20E9F9A8009626DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88820E9F9A8009626DE /* LaunchScreen.storyboard */; };
 		D15EB89420EA0AB3009626DE /* resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D15EB89320EA0AB3009626DE /* resources.bundle */; };
+		D1692680214F4BC5006E7498 /* extensionNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D169267F214F4BC5006E7498 /* extensionNSObject.swift */; };
 		D171369C214B98A1003BC94D /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171369B214B98A1003BC94D /* extensionUIView.swift */; };
 		D171369E214B98BE003BC94D /* extensionUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171369D214B98BE003BC94D /* extensionUILabel.swift */; };
 		D17136AB214B9BCD003BC94D /* HSCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136A5214B9BCD003BC94D /* HSCollectionViewFlowLayout.swift */; };
@@ -41,6 +42,7 @@
 		D15EB88920E9F9A8009626DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D15EB89320EA0AB3009626DE /* resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resources.bundle; sourceTree = "<group>"; };
+		D169267F214F4BC5006E7498 /* extensionNSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionNSObject.swift; sourceTree = "<group>"; };
 		D171369B214B98A1003BC94D /* extensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
 		D171369D214B98BE003BC94D /* extensionUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUILabel.swift; sourceTree = "<group>"; };
 		D17136A5214B9BCD003BC94D /* HSCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				D171369B214B98A1003BC94D /* extensionUIView.swift */,
 				D171369D214B98BE003BC94D /* extensionUILabel.swift */,
+				D169267F214F4BC5006E7498 /* extensionNSObject.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				D17136AF214B9BCD003BC94D /* HSUITestViewController.swift in Sources */,
 				D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */,
+				D1692680214F4BC5006E7498 /* extensionNSObject.swift in Sources */,
 				D17136B1214B9C38003BC94D /* HSObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

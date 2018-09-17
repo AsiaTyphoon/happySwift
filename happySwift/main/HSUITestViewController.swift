@@ -65,6 +65,17 @@ class HSUITestViewController: UIViewController {
         progress.center = view.center
         progress.backgroundColor = .white
         view.addSubview(progress)
+//        progress.progress(0.8)
+        
+        
+        var count: CGFloat = 0
+        DispatchTimer(timeInterval: 0.05) { (timer) in
+            progress.progress(count)
+            count += 0.01
+            if count >= 10 {
+                timer?.cancel()
+            }
+        }
     }
 }
 
