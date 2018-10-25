@@ -49,6 +49,10 @@ class ViewController: UIViewController {
         loadData()
         collectionView.reloadData()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
     }
     
@@ -57,6 +61,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
     func loadData() {
         
         dataArrs.append([HS.type : HSType.ui, HS.title : "UI测试"])

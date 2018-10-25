@@ -11,4 +11,37 @@ import UIKit
 
 extension UIView {
     
+    /// 获取view的快照图片
+    /// - returns : view截图，失败返回nil
+    func exSnapshot() -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0)
+        guard let context = UIGraphicsGetCurrentContext() else {
+            UIGraphicsEndImageContext()
+            return nil
+        }
+        layer.render(in: context)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
+    
+    /// 生成指定尺寸的纯色图片
+    /// - parameter color : 颜色
+    /// - parameter size : 大小
+    /// - returns : 纯色图片，失败返回nil
+    func exCreateImageWithColor(_ color: UIColor, _ size: CGSize) -> UIImage? {
+        if size == .zero { return nil }
+        UIGraphicsBeginImageContext(size)
+        guard let context = UIGraphicsGetCurrentContext() else {
+            UIGraphicsEndImageContext()
+            return nil
+        }
+        context.setFillColor(color.cgColor)
+        context.fill(CGRect(origin: .zero, size: size))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
 }

@@ -10,12 +10,17 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    public convenience init(hexString: String) {
+    
+    
+    /// 16进制颜色值
+    /// - parameter hexString : 16进制颜色值
+    /// - returns :
+    public convenience init(_ hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt32()
         Scanner(string: hex).scanHexInt32(&int)
         let a, r, g, b: UInt32
-        switch hex.characters.count {
+        switch hex.count {
         case 3:
             (a, r, g, b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17)
         case 6:
