@@ -38,7 +38,7 @@ class HSShowViewController: UIViewController {
     }
 
     deinit {
-        print("-----deinit-----\(self.classForCoder)")
+        print("----- deinit ----- \(self.classForCoder)")
     }
 
     /*

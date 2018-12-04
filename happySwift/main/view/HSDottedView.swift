@@ -82,7 +82,7 @@ class HSDottedView: UIView {
     
     
     deinit {
-        print("-----deinit-----\(self.classForCoder)")
+        print("----- deinit ----- \(self.classForCoder)")
     }
     
     // Only override draw() if you perform custom drawing.

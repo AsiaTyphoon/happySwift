@@ -65,7 +65,7 @@ class HSProgressView: UIView {
     
     
     deinit {
-        print("-----deinit-----\(self.classForCoder)")
+        print("----- deinit ----- \(self.classForCoder)")
     }
     
     

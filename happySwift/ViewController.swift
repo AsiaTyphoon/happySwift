@@ -54,6 +54,17 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        
+        ERChild().startGet { (response, error) in
+            
+            var err: NSError?
+            if let ddd = ERJson.require(response, asType: mmmodel.self, error: &err) {
+                print(ddd.name)
+            }
+            print(err?.localizedDescription)
+            
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,6 +96,34 @@ class ViewController: UIViewController {
         
     }
 }
+
+class ERChild: ERNetwork {
+    
+    override init() {
+        super.init()
+        baseURL = "http://192.168.6.30:8001"
+        path = "/public/settings"
+    }
+}
+
+class mmmodel: NSObject {
+    
+    var phone_verification = false
+    var site_logo_url: String?
+    var site_register: String?
+    var api_version: String?
+    var min_bc_api_version: String?
+    var ios_min_version: String?
+    var android_min_version: String?
+    var ios_published: String?
+    var youzan_client_id: String?
+    var name: String?
+    var api: Any?
+    var mweb: Any?
+    var external_live: Any?
+
+}
+
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     

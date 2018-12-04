@@ -11,6 +11,30 @@ import Foundation
 extension NSObject {
     
     
+    /// 获取对象属性
+    /// - parameter  :
+    /// - returns : 对象属性列表
+    func propertyNames() -> [String] {
+        
+        var count: UInt32 = 0
+        var list: [String] = []
+        
+        // 获取属性列表
+        guard let proList = class_copyPropertyList(self.classForCoder, &count) else { return list }
+        for i in 0..<Int(count) {
+            let pro = proList[i]
+            //获取属性的c字符串
+            let proStr = property_getName(pro)
+            //获取属性的String字符串
+            if let proName = String(utf8String: proStr) {
+                list.append(proName)
+            }
+        }
+        free(proList)
+        
+        return list
+    }
+    
     func copyFrom(fromDic: NSDictionary) -> Void {
         
         var count: UInt32 = 0

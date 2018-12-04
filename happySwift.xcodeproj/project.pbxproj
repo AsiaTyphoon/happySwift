@@ -34,6 +34,8 @@
 		D17136B3214B9C7B003BC94D /* HSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136B2214B9C7B003BC94D /* HSEnum.swift */; };
 		D17136B5214B9CB5003BC94D /* HSStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136B4214B9CB5003BC94D /* HSStruct.swift */; };
 		D17136B7214BA197003BC94D /* HSDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136B6214BA197003BC94D /* HSDefine.swift */; };
+		D1E2C50121B662450057EB45 /* ERNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2C50021B662450057EB45 /* ERNetwork.swift */; };
+		D1E2C50321B676FD0057EB45 /* ERJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2C50221B676FD0057EB45 /* ERJson.swift */; };
 		D1E788F52150E8860059CEF0 /* extensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E788F42150E8860059CEF0 /* extensionArray.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		D17136B2214B9C7B003BC94D /* HSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSEnum.swift; sourceTree = "<group>"; };
 		D17136B4214B9CB5003BC94D /* HSStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSStruct.swift; sourceTree = "<group>"; };
 		D17136B6214BA197003BC94D /* HSDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSDefine.swift; sourceTree = "<group>"; };
+		D1E2C50021B662450057EB45 /* ERNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERNetwork.swift; sourceTree = "<group>"; };
+		D1E2C50221B676FD0057EB45 /* ERJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERJson.swift; sourceTree = "<group>"; };
 		D1E788F42150E8860059CEF0 /* extensionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,7 @@
 		D15EB87B20E9F9A7009626DE /* happySwift */ = {
 			isa = PBXGroup;
 			children = (
+				D1E2C4FF21B6613E0057EB45 /* network */,
 				D17136A3214B9BA8003BC94D /* main */,
 				D171369A214B987A003BC94D /* extension */,
 				D15EB87C20E9F9A7009626DE /* AppDelegate.swift */,
@@ -167,6 +172,15 @@
 				D17136B6214BA197003BC94D /* HSDefine.swift */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		D1E2C4FF21B6613E0057EB45 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				D1E2C50021B662450057EB45 /* ERNetwork.swift */,
+				D1E2C50221B676FD0057EB45 /* ERJson.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		EF1EE9FE99F09D1D8E0C4112 /* Pods */ = {
@@ -256,10 +270,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-happySwift/Pods-happySwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +328,7 @@
 				D17136AC214B9BCD003BC94D /* HSShowViewController.swift in Sources */,
 				D171369E214B98BE003BC94D /* extensionUILabel.swift in Sources */,
 				D1692696214FAC5F006E7498 /* HSProgressView.swift in Sources */,
+				D1E2C50321B676FD0057EB45 /* ERJson.swift in Sources */,
 				D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */,
 				D171369C214B98A1003BC94D /* extensionUIView.swift in Sources */,
 				D1692682214F5AE6006E7498 /* extensionString.swift in Sources */,
@@ -318,6 +337,7 @@
 				D17136B5214B9CB5003BC94D /* HSStruct.swift in Sources */,
 				D17136B3214B9C7B003BC94D /* HSEnum.swift in Sources */,
 				D17136AE214B9BCD003BC94D /* HSCollectionViewCell.swift in Sources */,
+				D1E2C50121B662450057EB45 /* ERNetwork.swift in Sources */,
 				D1692695214FAC5F006E7498 /* HSDottedView.swift in Sources */,
 				D17136B7214BA197003BC94D /* HSDefine.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,

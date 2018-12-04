@@ -51,7 +51,7 @@ class HSUITestViewController: UIViewController {
     }
 
     deinit {
-        print("-----deinit-----\(self.classForCoder)")
+        print("----- deinit ----- \(self.classForCoder)")
     }
 
     @objc func testDot() {
