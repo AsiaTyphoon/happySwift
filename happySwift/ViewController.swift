@@ -8,6 +8,12 @@
 
 import UIKit
 
+struct Person {
+    struct Sex {
+        static let boy = "boy"
+    }
+}
+
 class ViewController: UIViewController {
 
     struct ID {
@@ -58,8 +64,8 @@ class ViewController: UIViewController {
         ERChild().startGet { (response, error) in
             
             var err: NSError?
-            if let ddd = ERJson.require(response, asType: mmmodel.self, error: &err) {
-                print(ddd.name)
+            if let ddd = ERJson.require(response, asType: NSDictionary.self, error: &err) {
+                print(ddd)
             }
             print(err?.localizedDescription)
             
@@ -103,6 +109,8 @@ class ERChild: ERNetwork {
         super.init()
         baseURL = "http://192.168.6.30:8001"
         path = "/public/settings"
+        
+        print(Person.Sex.boy)
     }
 }
 
