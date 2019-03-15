@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */; };
+		D11A2568223247FD005BE8D6 /* VMMirrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A2567223247FD005BE8D6 /* VMMirrorCell.swift */; };
 		D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87C20E9F9A7009626DE /* AppDelegate.swift */; };
 		D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87E20E9F9A7009626DE /* ViewController.swift */; };
 		D15EB88220E9F9A7009626DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88020E9F9A7009626DE /* Main.storyboard */; };
@@ -34,6 +35,11 @@
 		D17136B3214B9C7B003BC94D /* HSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136B2214B9C7B003BC94D /* HSEnum.swift */; };
 		D17136B5214B9CB5003BC94D /* HSStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136B4214B9CB5003BC94D /* HSStruct.swift */; };
 		D17136B7214BA197003BC94D /* HSDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136B6214BA197003BC94D /* HSDefine.swift */; };
+		D1B90D0A22251497002DBCC0 /* VMCellFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B90D0922251497002DBCC0 /* VMCellFirst.swift */; };
+		D1B90D0C2225214D002DBCC0 /* VMUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B90D0B2225214D002DBCC0 /* VMUnit.swift */; };
+		D1B90D1022252655002DBCC0 /* VMCellSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B90D0F22252655002DBCC0 /* VMCellSecond.swift */; };
+		D1BC34C0223B85A800A0A804 /* UnitDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC34BF223B85A800A0A804 /* UnitDefine.swift */; };
+		D1BC34C2223B865E00A0A804 /* extensionUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BC34C1223B865E00A0A804 /* extensionUIDevice.swift */; };
 		D1E2C50121B662450057EB45 /* ERNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2C50021B662450057EB45 /* ERNetwork.swift */; };
 		D1E2C50321B676FD0057EB45 /* ERJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2C50221B676FD0057EB45 /* ERJson.swift */; };
 		D1E788F52150E8860059CEF0 /* extensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E788F42150E8860059CEF0 /* extensionArray.swift */; };
@@ -43,6 +49,7 @@
 		2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-happySwift/Pods-happySwift.release.xcconfig"; sourceTree = "<group>"; };
 		B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happySwift/Pods-happySwift.debug.xcconfig"; sourceTree = "<group>"; };
+		D11A2567223247FD005BE8D6 /* VMMirrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMMirrorCell.swift; sourceTree = "<group>"; };
 		D15EB87920E9F9A7009626DE /* happySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15EB87C20E9F9A7009626DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15EB87E20E9F9A7009626DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +78,11 @@
 		D17136B2214B9C7B003BC94D /* HSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSEnum.swift; sourceTree = "<group>"; };
 		D17136B4214B9CB5003BC94D /* HSStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSStruct.swift; sourceTree = "<group>"; };
 		D17136B6214BA197003BC94D /* HSDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSDefine.swift; sourceTree = "<group>"; };
+		D1B90D0922251497002DBCC0 /* VMCellFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCellFirst.swift; sourceTree = "<group>"; };
+		D1B90D0B2225214D002DBCC0 /* VMUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMUnit.swift; sourceTree = "<group>"; };
+		D1B90D0F22252655002DBCC0 /* VMCellSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCellSecond.swift; sourceTree = "<group>"; };
+		D1BC34BF223B85A800A0A804 /* UnitDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitDefine.swift; sourceTree = "<group>"; };
+		D1BC34C1223B865E00A0A804 /* extensionUIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIDevice.swift; sourceTree = "<group>"; };
 		D1E2C50021B662450057EB45 /* ERNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERNetwork.swift; sourceTree = "<group>"; };
 		D1E2C50221B676FD0057EB45 /* ERJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERJson.swift; sourceTree = "<group>"; };
 		D1E788F42150E8860059CEF0 /* extensionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionArray.swift; sourceTree = "<group>"; };
@@ -117,6 +129,7 @@
 		D15EB87B20E9F9A7009626DE /* happySwift */ = {
 			isa = PBXGroup;
 			children = (
+				D1B90D0622251273002DBCC0 /* VMCell */,
 				D1E2C4FF21B6613E0057EB45 /* network */,
 				D17136A3214B9BA8003BC94D /* main */,
 				D171369A214B987A003BC94D /* extension */,
@@ -128,6 +141,7 @@
 				D15EB88B20E9F9A8009626DE /* Info.plist */,
 				D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */,
 				D15EB89320EA0AB3009626DE /* resources.bundle */,
+				D1BC34BF223B85A800A0A804 /* UnitDefine.swift */,
 			);
 			path = happySwift;
 			sourceTree = "<group>";
@@ -154,6 +168,7 @@
 				D169268B214F7BCB006E7498 /* extensionUIImage.swift */,
 				D1692690214F85AF006E7498 /* extensionUIColor.swift */,
 				D1E788F42150E8860059CEF0 /* extensionArray.swift */,
+				D1BC34C1223B865E00A0A804 /* extensionUIDevice.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -172,6 +187,17 @@
 				D17136B6214BA197003BC94D /* HSDefine.swift */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		D1B90D0622251273002DBCC0 /* VMCell */ = {
+			isa = PBXGroup;
+			children = (
+				D1B90D0B2225214D002DBCC0 /* VMUnit.swift */,
+				D1B90D0922251497002DBCC0 /* VMCellFirst.swift */,
+				D1B90D0F22252655002DBCC0 /* VMCellSecond.swift */,
+				D11A2567223247FD005BE8D6 /* VMMirrorCell.swift */,
+			);
+			path = VMCell;
 			sourceTree = "<group>";
 		};
 		D1E2C4FF21B6613E0057EB45 /* network */ = {
@@ -329,9 +355,11 @@
 				D171369E214B98BE003BC94D /* extensionUILabel.swift in Sources */,
 				D1692696214FAC5F006E7498 /* HSProgressView.swift in Sources */,
 				D1E2C50321B676FD0057EB45 /* ERJson.swift in Sources */,
+				D1B90D0A22251497002DBCC0 /* VMCellFirst.swift in Sources */,
 				D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */,
 				D171369C214B98A1003BC94D /* extensionUIView.swift in Sources */,
 				D1692682214F5AE6006E7498 /* extensionString.swift in Sources */,
+				D11A2568223247FD005BE8D6 /* VMMirrorCell.swift in Sources */,
 				D1692684214F5ECC006E7498 /* extensionNSAttributedString.swift in Sources */,
 				D17136AB214B9BCD003BC94D /* HSCollectionViewFlowLayout.swift in Sources */,
 				D17136B5214B9CB5003BC94D /* HSStruct.swift in Sources */,
@@ -341,14 +369,18 @@
 				D1692695214FAC5F006E7498 /* HSDottedView.swift in Sources */,
 				D17136B7214BA197003BC94D /* HSDefine.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
+				D1BC34C0223B85A800A0A804 /* UnitDefine.swift in Sources */,
 				D17136AF214B9BCD003BC94D /* HSUITestViewController.swift in Sources */,
+				D1B90D1022252655002DBCC0 /* VMCellSecond.swift in Sources */,
 				D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */,
 				D1692680214F4BC5006E7498 /* extensionNSObject.swift in Sources */,
 				D1692691214F85AF006E7498 /* extensionUIColor.swift in Sources */,
 				D1E788F52150E8860059CEF0 /* extensionArray.swift in Sources */,
+				D1BC34C2223B865E00A0A804 /* extensionUIDevice.swift in Sources */,
 				D1692686214F7B06006E7498 /* extensionPHAsset.swift in Sources */,
 				D169268A214F7B3E006E7498 /* extensionUIAlertController.swift in Sources */,
 				D17136B1214B9C38003BC94D /* HSObject.swift in Sources */,
+				D1B90D0C2225214D002DBCC0 /* VMUnit.swift in Sources */,
 				D169268C214F7BCB006E7498 /* extensionUIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
