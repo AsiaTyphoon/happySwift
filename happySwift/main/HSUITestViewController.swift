@@ -75,7 +75,7 @@ class HSUITestViewController: UIViewController {
         
         
         var count: CGFloat = 0
-        DispatchTimer(timeInterval: 0.05) { (timer) in
+        exDispatchTimer(timeInterval: 0.05) { (timer) in
             progress.progress(count)
             count += 0.01
             if count >= 10 {

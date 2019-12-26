@@ -25,7 +25,7 @@ class ERJson: NSObject {
     /// - parameter asType: object鉴定类型
     /// - parameter error: 返回的错误
     /// - returns: 如果给定对象是T类型，则返回T类型的对象;否则返回nil
-    open static func require<T>(_ object: Any?, asType: T.Type, error: NSErrorPointer) -> T? {
+    public static func require<T>(_ object: Any?, asType: T.Type, error: NSErrorPointer) -> T? {
         if let noneNilObject = object {
             if let objectWithType = noneNilObject as? T {
                 return objectWithType
@@ -45,7 +45,7 @@ class ERJson: NSObject {
     /// - parameter asType: object鉴定类型
     /// - parameter error: 返回的错误
     /// - returns: 如果给定对象是T类型，则返回T类型的对象;否则返回nil
-    open static func require<T>(_ dict: NSDictionary, field: String, asType: T.Type, error: NSErrorPointer) -> T? {
+    public static func require<T>(_ dict: NSDictionary, field: String, asType: T.Type, error: NSErrorPointer) -> T? {
         if let object = dict.object(forKey: field) {
             if let objectWithType = object as? T {
                 return objectWithType
@@ -71,7 +71,7 @@ class ERJson: NSObject {
                     } else if T.self == Double.self {
                         convertedObject = Double(stringObject)
                     } else if T.self == Date.self {
-                        convertedObject = stringObject.dateValue()
+                        convertedObject = stringObject.exDateValue()
                     }
                     
                     if nil != convertedObject {

@@ -14,6 +14,8 @@ struct Person {
     }
 }
 
+
+//MARK:-
 class ViewController: UIViewController {
 
     struct ID {
@@ -113,8 +115,12 @@ class ERChild: ERNetwork {
     
     override init() {
         super.init()
-        baseURL = "http://192.168.6.30:8001"
-        path = "/public/settings"
+//        baseURL = "http://192.168.6.30:8001"
+//        path = "/public/settings"
+        
+        baseURL = "http://dsapi.wsrtv.com.cn"
+        path = "/cms/public/v2/columns"
+    
         
         print(Person.Sex.boy)
     }

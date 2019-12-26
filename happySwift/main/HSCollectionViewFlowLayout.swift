@@ -31,9 +31,9 @@ class HSCollectionViewFlowLayout: UICollectionViewFlowLayout {
     override init() {
         betweenOfCell = 11.0
         super.init()
-        scrollDirection = UICollectionViewScrollDirection.horizontal
+        scrollDirection = UICollectionView.ScrollDirection.horizontal
         minimumLineSpacing = 5
-        sectionInset = UIEdgeInsetsMake(5, 5, 5, 5)
+        sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
     }
     
     convenience init(_ cellType: DSAlignType){
@@ -67,10 +67,10 @@ class HSCollectionViewFlowLayout: UICollectionViewFlowLayout {
             let nextY:CGFloat = nextAttr == nil ? 0 : nextAttr!.frame.maxY
             
             if currentY != previousY && currentY != nextY{
-                if currentAttr.representedElementKind == UICollectionElementKindSectionHeader {
+                if currentAttr.representedElementKind == UICollectionView.elementKindSectionHeader {
                     layoutAttributes_t.removeAll()
                     sumCellWidth = 0.0
-                } else if currentAttr.representedElementKind == UICollectionElementKindSectionFooter {
+                } else if currentAttr.representedElementKind == UICollectionView.elementKindSectionFooter {
                     layoutAttributes_t.removeAll()
                     sumCellWidth = 0.0
                 } else{
@@ -128,9 +128,9 @@ class HSCollectionViewFlowLayout: UICollectionViewFlowLayout {
     required init?(coder aDecoder: NSCoder) {
         betweenOfCell = 11.0
         super.init(coder: aDecoder)
-        scrollDirection = UICollectionViewScrollDirection.horizontal
+        scrollDirection = UICollectionView.ScrollDirection.horizontal
         minimumLineSpacing = 5
-        sectionInset = UIEdgeInsetsMake(5, 5, 5, 5)
+        sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
     }
     
 }

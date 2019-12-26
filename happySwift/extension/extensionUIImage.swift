@@ -9,14 +9,17 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+//MARK:-
+public extension UIImage {
     
     
     /// 压缩图片大小
     /// - parameter scale : 压缩比例 0..1
     /// - returns : 压缩后的图片，压缩失败返回nil
     func exCompress(_ scale: CGFloat) -> UIImage? {
-        guard let imgData = UIImageJPEGRepresentation(self, scale) else { return nil }
+        guard let imgData = jpegData(compressionQuality: scale) else {
+            return nil
+        }
         return UIImage(data: imgData)
     }
     

@@ -9,9 +9,12 @@
 import Foundation
 import Photos
 
-extension PHAsset {
+//MARK:-
+public extension PHAsset {
     
-    func requestImage(handler: @escaping ( _ imageData: Data?) -> Void ) {
+    /// 获取图片
+    /// - returns :
+    func exRequestImage(handler: @escaping ( _ imageData: Data?) -> Void ) {
         
         if self.mediaType != .image {
             handler(nil)

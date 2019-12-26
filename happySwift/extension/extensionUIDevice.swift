@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-extension UIDevice {
+//MARK:-
+public extension UIDevice {
     
     /// 获取设备型号
     /// - parameter  :
     /// - returns : 设备型号
-    open func machineName() -> String {
+    func machineName() -> String {
         
         var systemInfo = utsname()
         uname(&systemInfo)

@@ -9,9 +9,7 @@
 import Foundation
 import UIKit
 
-extension Array {
+//MARK:-
+public extension Array {
     
-    func remove<T: Equatable>(_ element: T) {
-        
-    }
 }

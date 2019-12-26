@@ -117,7 +117,7 @@ class HSProgressView: UIView {
         CATransaction.begin()
         CATransaction.setDisableActions(false)
         CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name:
-            kCAMediaTimingFunctionEaseInEaseOut))
+            CAMediaTimingFunctionName.easeInEaseOut))
         CATransaction.setAnimationDuration(0.01)
         shapeLayer.strokeEnd = pvalue
         CATransaction.commit()
@@ -135,12 +135,12 @@ class HSProgressView: UIView {
         let orbit = CAKeyframeAnimation(keyPath:"position")
         orbit.duration = 0.01
         orbit.path = path2
-        orbit.calculationMode = kCAAnimationPaced
+        orbit.calculationMode = CAAnimationCalculationMode.paced
         orbit.timingFunction =
-            CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        orbit.rotationMode = kCAAnimationRotateAuto
+            CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        orbit.rotationMode = CAAnimationRotationMode.rotateAuto
         orbit.isRemovedOnCompletion = false
-        orbit.fillMode = kCAFillModeForwards
+        orbit.fillMode = CAMediaTimingFillMode.forwards
         imgViewDot.layer.add(orbit,forKey:"Move")
     }
     

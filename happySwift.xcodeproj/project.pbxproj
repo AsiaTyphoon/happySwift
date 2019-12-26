@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */; };
 		D11A2568223247FD005BE8D6 /* VMMirrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11A2567223247FD005BE8D6 /* VMMirrorCell.swift */; };
+		D11C655F2244E24500C1C408 /* UnitIphoneX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11C655E2244E24500C1C408 /* UnitIphoneX.swift */; };
+		D136E8632251EF9F00D42AA3 /* ExtensionUINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136E8622251EF9F00D42AA3 /* ExtensionUINib.swift */; };
+		D147E6AA22438C1200A91E4E /* MenuPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147E6A922438C1200A91E4E /* MenuPageView.swift */; };
+		D147E6AC22438CBF00A91E4E /* MenuPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D147E6AB22438CBF00A91E4E /* MenuPageViewController.swift */; };
 		D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87C20E9F9A7009626DE /* AppDelegate.swift */; };
 		D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87E20E9F9A7009626DE /* ViewController.swift */; };
 		D15EB88220E9F9A7009626DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15EB88020E9F9A7009626DE /* Main.storyboard */; };
@@ -50,6 +54,10 @@
 		9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-happySwift/Pods-happySwift.release.xcconfig"; sourceTree = "<group>"; };
 		B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happySwift/Pods-happySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		D11A2567223247FD005BE8D6 /* VMMirrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMMirrorCell.swift; sourceTree = "<group>"; };
+		D11C655E2244E24500C1C408 /* UnitIphoneX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitIphoneX.swift; sourceTree = "<group>"; };
+		D136E8622251EF9F00D42AA3 /* ExtensionUINib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUINib.swift; sourceTree = "<group>"; };
+		D147E6A922438C1200A91E4E /* MenuPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPageView.swift; sourceTree = "<group>"; };
+		D147E6AB22438CBF00A91E4E /* MenuPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPageViewController.swift; sourceTree = "<group>"; };
 		D15EB87920E9F9A7009626DE /* happySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15EB87C20E9F9A7009626DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D15EB87E20E9F9A7009626DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 				D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */,
 				D15EB89320EA0AB3009626DE /* resources.bundle */,
 				D1BC34BF223B85A800A0A804 /* UnitDefine.swift */,
+				D11C655E2244E24500C1C408 /* UnitIphoneX.swift */,
 			);
 			path = happySwift;
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 				D1692690214F85AF006E7498 /* extensionUIColor.swift */,
 				D1E788F42150E8860059CEF0 /* extensionArray.swift */,
 				D1BC34C1223B865E00A0A804 /* extensionUIDevice.swift */,
+				D136E8622251EF9F00D42AA3 /* ExtensionUINib.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -196,6 +206,8 @@
 				D1B90D0922251497002DBCC0 /* VMCellFirst.swift */,
 				D1B90D0F22252655002DBCC0 /* VMCellSecond.swift */,
 				D11A2567223247FD005BE8D6 /* VMMirrorCell.swift */,
+				D147E6A922438C1200A91E4E /* MenuPageView.swift */,
+				D147E6AB22438CBF00A91E4E /* MenuPageViewController.swift */,
 			);
 			path = VMCell;
 			sourceTree = "<group>";
@@ -352,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D17136AC214B9BCD003BC94D /* HSShowViewController.swift in Sources */,
+				D136E8632251EF9F00D42AA3 /* ExtensionUINib.swift in Sources */,
 				D171369E214B98BE003BC94D /* extensionUILabel.swift in Sources */,
 				D1692696214FAC5F006E7498 /* HSProgressView.swift in Sources */,
 				D1E2C50321B676FD0057EB45 /* ERJson.swift in Sources */,
@@ -359,6 +372,7 @@
 				D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */,
 				D171369C214B98A1003BC94D /* extensionUIView.swift in Sources */,
 				D1692682214F5AE6006E7498 /* extensionString.swift in Sources */,
+				D147E6AC22438CBF00A91E4E /* MenuPageViewController.swift in Sources */,
 				D11A2568223247FD005BE8D6 /* VMMirrorCell.swift in Sources */,
 				D1692684214F5ECC006E7498 /* extensionNSAttributedString.swift in Sources */,
 				D17136AB214B9BCD003BC94D /* HSCollectionViewFlowLayout.swift in Sources */,
@@ -371,12 +385,14 @@
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				D1BC34C0223B85A800A0A804 /* UnitDefine.swift in Sources */,
 				D17136AF214B9BCD003BC94D /* HSUITestViewController.swift in Sources */,
+				D11C655F2244E24500C1C408 /* UnitIphoneX.swift in Sources */,
 				D1B90D1022252655002DBCC0 /* VMCellSecond.swift in Sources */,
 				D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */,
 				D1692680214F4BC5006E7498 /* extensionNSObject.swift in Sources */,
 				D1692691214F85AF006E7498 /* extensionUIColor.swift in Sources */,
 				D1E788F52150E8860059CEF0 /* extensionArray.swift in Sources */,
 				D1BC34C2223B865E00A0A804 /* extensionUIDevice.swift in Sources */,
+				D147E6AA22438C1200A91E4E /* MenuPageView.swift in Sources */,
 				D1692686214F7B06006E7498 /* extensionPHAsset.swift in Sources */,
 				D169268A214F7B3E006E7498 /* extensionUIAlertController.swift in Sources */,
 				D17136B1214B9C38003BC94D /* HSObject.swift in Sources */,
@@ -527,7 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36C736M4FU;
+				DEVELOPMENT_TEAM = 54BSQLC2XK;
 				INFOPLIST_FILE = happySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,7 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = slardar.happySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -547,7 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36C736M4FU;
+				DEVELOPMENT_TEAM = 54BSQLC2XK;
 				INFOPLIST_FILE = happySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,7 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = slardar.happySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

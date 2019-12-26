@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-extension UIView {
+//MARK:-
+public extension UIView {
     
     /// 获取view的快照图片
     /// - returns : view截图，失败返回nil
@@ -43,5 +44,4 @@ extension UIView {
         UIGraphicsEndImageContext()
         return image
     }
-    
 }

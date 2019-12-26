@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+//MARK:-
+public extension UIColor {
     
     
     /// 16进制颜色值
     /// - parameter hexString : 16进制颜色值
     /// - returns :
-    public convenience init(_ hexString: String) {
+    convenience init(_ hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt32()
         Scanner(string: hex).scanHexInt32(&int)

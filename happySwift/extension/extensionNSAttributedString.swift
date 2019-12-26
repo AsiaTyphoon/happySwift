@@ -9,16 +9,17 @@
 import Foundation
 import UIKit
 
-extension NSAttributedString {
+//MARK:-
+public extension NSAttributedString {
     
-    
-    /// 富文本 -> html文本
-    func toHtml() -> String? {
+    /// 富文本转换为html
+    /// - returns :
+    func exConvertHtml() -> String? {
         do {
             let htmlData = try self.data(from: NSRange(location: 0, length: self.length), documentAttributes: [.documentType : NSAttributedString.DocumentType.html])
             return String(data: htmlData, encoding: .utf8)
         } catch {
-            print("toHtml_error:\(error)")
+            print("exConvertHtml: \(error)")
             return nil
         }
     }

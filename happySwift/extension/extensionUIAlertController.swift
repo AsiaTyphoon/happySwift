@@ -9,39 +9,31 @@
 import Foundation
 import UIKit
 
-extension UIAlertController {
+//MARK:-
+public extension UIAlertController {
     
-    class func prompt(_ title: String) {
-        prompt(title) {
-            
-        }
-    }
-    class func prompt(_ title: String, completion: @escaping ()->() ) {
-        prompt(title, nil) {
-            completion()
-        }
-    }
-    class func prompt(_ title: String?, _ message: String?, completion: @escaping ()->() ) {
-        DispatchQueue.main.async {
-            
-//            UIAlertController.alert(title, message: message, handler: { (_) in
-//                completion()
-//            })
-        }
-    }
-    
+
+    /// 确认取消系统弹窗
+    /// - parameter title : 标题
+    /// - parameter completion : 确认回调
+    /// - parameter cancel : 取消回调
+    /// - returns :
     class func alert(_ title: String, completion: @escaping (() -> ()), cancel: @escaping (() -> ())) {
-        alert(title, "确定", "取消", completion: {
-            completion()
-        }) {
-            cancel()
-        }
+        alert(with: title, defaultName: "确认", cancelName: "取消", completion: completion, cancel: cancel)
     }
+
     
-    class func alert(_ title: String, _ okName: String, _ cancelName: String, completion: @escaping (() -> ()), cancel: @escaping (() -> ())) {
+    /// 系统弹窗
+    /// - parameter title : 标题
+    /// - parameter defaultName : 确认
+    /// - parameter cancelName : 取消
+    /// - parameter completion : 确认回调
+    /// - parameter cancel : 取消回调
+    /// - returns :
+    class func alert(with title: String, defaultName: String, cancelName: String, completion: @escaping (() -> ()), cancel: @escaping (() -> ())) {
         DispatchQueue.main.async {
             let alertvc = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-            let action = UIAlertAction(title: okName, style: .default, handler: { (_) in
+            let action = UIAlertAction(title: defaultName, style: .default, handler: { (_) in
                 completion()
             })
             let cancelAction = UIAlertAction(title: cancelName, style: .cancel, handler: { (_) in

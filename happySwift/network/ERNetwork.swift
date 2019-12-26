@@ -20,7 +20,6 @@ import AFNetworking
     var request: NSURLRequest?
     var uploadTask: URLSessionUploadTask?
     
-    
     //MARK:-
     override init() {
         super.init()
@@ -30,7 +29,7 @@ import AFNetworking
     //配置完整URL
     func setupParams() {
         var paramStr = ""
-        let propertyList = propertyNames()
+        let propertyList = exPropertyNames()
         for key in propertyList {
             paramStr = paramStr + "\(key)=\(value(forKey: key) ?? "")"
         }

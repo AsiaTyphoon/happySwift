@@ -8,13 +8,14 @@
 
 import Foundation
 
-extension NSObject {
+//MARK:-
+public extension NSObject {
     
     
     /// 获取对象属性
     /// - parameter  :
     /// - returns : 对象属性列表
-    func propertyNames() -> [String] {
+    func exPropertyNames() -> [String] {
         
         var count: UInt32 = 0
         var list: [String] = []
@@ -35,7 +36,10 @@ extension NSObject {
         return list
     }
     
-    func copyFrom(fromDic: NSDictionary) -> Void {
+    /// 赋值对象属性
+    /// - parameter dic : 字典
+    /// - returns :
+    func exCopyFrom(from dic: NSDictionary) -> Void {
         
         var count: UInt32 = 0
         
@@ -48,7 +52,7 @@ extension NSObject {
             //获取属性的String字符串
             let proName = String(utf8String: proStr)
             
-            if let value = fromDic[proName!] {
+            if let value = dic[proName!] {
                 //居然真的返回了<null>
                 if value is NSNull {
                     
@@ -60,38 +64,13 @@ extension NSObject {
         free(proList)
     }
     
-//    func toDic() -> [String : Any] {
-//        //只支持系统提供的数据结构，不然写入文件会失败
-//        var dic: [String : Any] = [:]
-//        var count: UInt32 = 0
-//        if let proList = class_copyPropertyList(self.classForCoder, &count) {
-//            for i in 0..<Int(count) {
-//                let pro = proList[i]
-//                //获取属性的c字符串
-//                let proStr = property_getName(pro) {
-//                    //获取属性的String字符串
-//                    if let proName = String(utf8String: proStr) {
-//                        if let value = value(forKey: proName) {
-//                            if proName != "bodyComponents" {
-//                                dic[proName] = value
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            free(proList)
-//        }
-//        
-//        return dic
-//    }
     
     /// GCD定时器倒计时
     /// - parameter timeInterval : 循环间隔时间
     /// - parameter repeatCount : 重复次数
     /// - parameter handler : 循环事件, 闭包参数： 1. timer， 2. 剩余执行次数
     /// - returns :
-    public func DispatchTimer(timeInterval: Double, repeatCount:Int, handler:@escaping (DispatchSourceTimer?, Int)->())
-    {
+    func exDispatchTimer(timeInterval: Double, repeatCount:Int, handler:@escaping (DispatchSourceTimer?, Int)->()) {
         if repeatCount <= 0 {
             return
         }
@@ -115,8 +94,7 @@ extension NSObject {
     /// - parameter timeInterval : 循环间隔时间
     /// - parameter handler : 循环事件
     /// - returns :
-    public func DispatchTimer(timeInterval: Double, handler:@escaping (DispatchSourceTimer?)->())
-    {
+    func exDispatchTimer(timeInterval: Double, handler:@escaping (DispatchSourceTimer?)->()) {
         let timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main)
         timer.schedule(deadline: .now(), repeating: timeInterval)
         timer.setEventHandler {
@@ -132,8 +110,7 @@ extension NSObject {
     /// - parameter after : 延迟的时间
     /// - parameter handler : 事件
     /// - returns :
-    public func DispatchAfter(after: Double, handler:@escaping ()->())
-    {
+    func exDispatchAfter(after: Double, handler:@escaping ()->()) {
         DispatchQueue.main.asyncAfter(deadline: .now() + after) {
             handler()
         }
