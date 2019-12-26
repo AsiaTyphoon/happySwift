@@ -14,9 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - SDWebImage (4.4.3):
-    - SDWebImage/Core (= 4.4.3)
-  - SDWebImage/Core (4.4.3)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
   - SnapKit (4.0.1)
 
 DEPENDENCIES:
@@ -24,11 +24,17 @@ DEPENDENCIES:
   - SDWebImage
   - SnapKit (~> 4.0.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - SDWebImage
+    - SnapKit
+
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 4bce841c678648edb9ccaabd751e9dad654c2a55
+PODFILE CHECKSUM: 82e64eed681916e276001ddff2430592945e7c16
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.7.3
