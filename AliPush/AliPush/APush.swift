@@ -10,7 +10,6 @@ import UIKit
 import AliPushMap
 import UserNotifications
 
-
 /// 阿里推送appKey
 public var AliPushAppKey: String {
     return "27842966"
@@ -22,13 +21,13 @@ public var AliPushAppSecret: String {
 
 //MARK:-
 /// 阿里推送管理器
-open class AliPushManager: NSObject {
+open class APush: NSObject {
     
-    static public let shared = AliPushManager()
+    static public let shared = APush()
 }
 
 //MARK:-
-public extension AliPushManager {
+public extension APush {
     
     /// 阿里推送初始化
     static func configure(with appKey: String,
