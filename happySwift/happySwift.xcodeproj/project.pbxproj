@@ -31,6 +31,8 @@
 		D17136B7214BA197003BC94D /* HSDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17136B6214BA197003BC94D /* HSDefine.swift */; };
 		D199FA5A23B4961400A71CCF /* EXUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D199FA5923B4961400A71CCF /* EXUIKit.framework */; };
 		D199FA5B23B4961400A71CCF /* EXUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D199FA5923B4961400A71CCF /* EXUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1AC4A0723B4A8FE00B1DA20 /* AliPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */; };
+		D1AC4A0823B4A8FE00B1DA20 /* AliPush.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1B90D0A22251497002DBCC0 /* VMCellFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B90D0922251497002DBCC0 /* VMCellFirst.swift */; };
 		D1B90D0C2225214D002DBCC0 /* VMUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B90D0B2225214D002DBCC0 /* VMUnit.swift */; };
 		D1B90D1022252655002DBCC0 /* VMCellSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B90D0F22252655002DBCC0 /* VMCellSecond.swift */; };
@@ -47,6 +49,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D199FA5B23B4961400A71CCF /* EXUIKit.framework in Embed Frameworks */,
+				D1AC4A0823B4A8FE00B1DA20 /* AliPush.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +84,7 @@
 		D17136B4214B9CB5003BC94D /* HSStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSStruct.swift; sourceTree = "<group>"; };
 		D17136B6214BA197003BC94D /* HSDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSDefine.swift; sourceTree = "<group>"; };
 		D199FA5923B4961400A71CCF /* EXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AliPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B90D0922251497002DBCC0 /* VMCellFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCellFirst.swift; sourceTree = "<group>"; };
 		D1B90D0B2225214D002DBCC0 /* VMUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMUnit.swift; sourceTree = "<group>"; };
 		D1B90D0F22252655002DBCC0 /* VMCellSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMCellSecond.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1AC4A0723B4A8FE00B1DA20 /* AliPush.framework in Frameworks */,
 				D199FA5A23B4961400A71CCF /* EXUIKit.framework in Frameworks */,
 				0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */,
 			);
@@ -113,6 +118,7 @@
 		D15EB87020E9F9A7009626DE = {
 			isa = PBXGroup;
 			children = (
+				D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */,
 				D199FA5923B4961400A71CCF /* EXUIKit.framework */,
 				D15EB87B20E9F9A7009626DE /* happySwift */,
 				D15EB87A20E9F9A7009626DE /* Products */,
@@ -487,6 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54BSQLC2XK;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = happySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,6 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54BSQLC2XK;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = happySwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (

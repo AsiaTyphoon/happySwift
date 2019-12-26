@@ -1,0 +1,4 @@
+module AliPushMap {
+    header "AliPush-Bridging-Header.h"
+    export *
+}

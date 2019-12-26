@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:AliPush/AliPush.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		1C12CB68D1FAF0BAF3D39BDD /* Pods_EXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB649A3E5CDECBE102E41CA /* Pods-EXUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EXUIKit.release.xcconfig"; path = "Target Support Files/Pods-EXUIKit/Pods-EXUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		D140AE9823B4B18D00B76C58 /* AliPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AliPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D199FA2E23B48B5C00A71CCF /* EXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D199FA3123B48B5C00A71CCF /* EXUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXUIKit.h; sourceTree = "<group>"; };
 		D199FA3223B48B5C00A71CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		905DD674824023085482EAC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D140AE9823B4B18D00B76C58 /* AliPush.framework */,
 				1C12CB68D1FAF0BAF3D39BDD /* Pods_EXUIKit.framework */,
 			);
 			name = Frameworks;
@@ -376,6 +378,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EXUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -403,6 +406,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EXUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;

@@ -16,3 +16,7 @@ end
 target 'EXUIKit' do
     project 'EXUIKit/EXUIKit.xcodeproj'
 end
+
+target 'AliPush' do
+  project 'AliPush/AliPush.xcodeproj'
+end
