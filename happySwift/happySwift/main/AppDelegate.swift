@@ -13,8 +13,15 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: BaseDelegate {
     
+    var window: UIWindow?
+    
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         let didFinish = super.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        let mainTabVC = MainTabBarController()
+        let mainNaVC = MainNavigationController(rootViewController: mainTabVC)
+        window?.rootViewController = mainNaVC
+        window?.makeKeyAndVisible()
         
         return didFinish
     }

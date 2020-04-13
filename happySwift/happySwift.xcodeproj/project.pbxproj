@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */; };
-		D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87C20E9F9A7009626DE /* AppDelegate.swift */; };
-		D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15EB87E20E9F9A7009626DE /* ViewController.swift */; };
 		D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */; };
 		D199FA5A23B4961400A71CCF /* EXUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D199FA5923B4961400A71CCF /* EXUIKit.framework */; };
 		D199FA5B23B4961400A71CCF /* EXUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D199FA5923B4961400A71CCF /* EXUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,6 +38,15 @@
 		E8744DEC2444B8A50079BC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8744DD42444B8A50079BC59 /* LaunchScreen.storyboard */; };
 		E8744DED2444B8A50079BC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8744DD52444B8A50079BC59 /* Main.storyboard */; };
 		E8744DEF2444B95F0079BC59 /* BaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DEE2444B95F0079BC59 /* BaseDelegate.swift */; };
+		E8744DF12444BB250079BC59 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DF02444BB250079BC59 /* BaseNavigationController.swift */; };
+		E8744DF32444BB4E0079BC59 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DF22444BB4E0079BC59 /* BaseTabBarController.swift */; };
+		E8744DF52444BB8D0079BC59 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DF42444BB8D0079BC59 /* BaseViewController.swift */; };
+		E8744DF72444BBC40079BC59 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DF62444BBC40079BC59 /* BaseNavigationBar.swift */; };
+		E8744DFA2444BCEF0079BC59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DF82444BCEF0079BC59 /* ViewController.swift */; };
+		E8744DFB2444BCEF0079BC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DF92444BCEF0079BC59 /* AppDelegate.swift */; };
+		E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DFC2444BD5A0079BC59 /* MainTabBarController.swift */; };
+		E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DFE2444BDBD0079BC59 /* MainNavigationController.swift */; };
+		E8744E022444C00A0079BC59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744E012444C00A0079BC59 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,8 +69,6 @@
 		9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-happySwift/Pods-happySwift.release.xcconfig"; sourceTree = "<group>"; };
 		B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-happySwift/Pods-happySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		D15EB87920E9F9A7009626DE /* happySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D15EB87C20E9F9A7009626DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D15EB87E20E9F9A7009626DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D15EB88420E9F9A7009626DE /* happySwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = happySwift.xcdatamodel; sourceTree = "<group>"; };
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D199FA5923B4961400A71CCF /* EXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +98,15 @@
 		E8744DD42444B8A50079BC59 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8744DD52444B8A50079BC59 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E8744DEE2444B95F0079BC59 /* BaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
+		E8744DF02444BB250079BC59 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		E8744DF22444BB4E0079BC59 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		E8744DF42444BB8D0079BC59 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E8744DF62444BBC40079BC59 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
+		E8744DF82444BCEF0079BC59 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8744DF92444BCEF0079BC59 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8744DFC2444BD5A0079BC59 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E8744DFE2444BDBD0079BC59 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		E8744E012444C00A0079BC59 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +161,6 @@
 				E8744DD22444B8A50079BC59 /* model */,
 				E8744DB52444B8A50079BC59 /* mvc */,
 				E8744DC92444B8A50079BC59 /* utility */,
-				D15EB87C20E9F9A7009626DE /* AppDelegate.swift */,
-				D15EB87E20E9F9A7009626DE /* ViewController.swift */,
 				D15EB88B20E9F9A8009626DE /* Info.plist */,
 				D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */,
 			);
@@ -159,6 +171,10 @@
 			isa = PBXGroup;
 			children = (
 				E8744DEE2444B95F0079BC59 /* BaseDelegate.swift */,
+				E8744DF02444BB250079BC59 /* BaseNavigationController.swift */,
+				E8744DF22444BB4E0079BC59 /* BaseTabBarController.swift */,
+				E8744DF42444BB8D0079BC59 /* BaseViewController.swift */,
+				E8744DF62444BBC40079BC59 /* BaseNavigationBar.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -166,6 +182,7 @@
 		E8744DB52444B8A50079BC59 /* mvc */ = {
 			isa = PBXGroup;
 			children = (
+				E8744E002444BFE80079BC59 /* home */,
 				E8744DB62444B8A50079BC59 /* hs */,
 				E8744DC22444B8A50079BC59 /* VMCell */,
 			);
@@ -247,10 +264,22 @@
 		E8744DD32444B8A50079BC59 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				E8744DF92444BCEF0079BC59 /* AppDelegate.swift */,
+				E8744DF82444BCEF0079BC59 /* ViewController.swift */,
 				E8744DD42444B8A50079BC59 /* LaunchScreen.storyboard */,
 				E8744DD52444B8A50079BC59 /* Main.storyboard */,
+				E8744DFC2444BD5A0079BC59 /* MainTabBarController.swift */,
+				E8744DFE2444BDBD0079BC59 /* MainNavigationController.swift */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		E8744E002444BFE80079BC59 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E8744E012444C00A0079BC59 /* HomeViewController.swift */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 		EF1EE9FE99F09D1D8E0C4112 /* Pods */ = {
@@ -375,29 +404,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */,
+				E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */,
+				E8744E022444C00A0079BC59 /* HomeViewController.swift in Sources */,
 				E8744DD62444B8A50079BC59 /* HSShowViewController.swift in Sources */,
 				E8744DE52444B8A50079BC59 /* VMCellSecond.swift in Sources */,
-				D15EB87F20E9F9A7009626DE /* ViewController.swift in Sources */,
 				E8744DE32444B8A50079BC59 /* VMMirrorCell.swift in Sources */,
 				E8744DE12444B8A50079BC59 /* MenuPageViewController.swift in Sources */,
+				E8744DFB2444BCEF0079BC59 /* AppDelegate.swift in Sources */,
+				E8744DF52444BB8D0079BC59 /* BaseViewController.swift in Sources */,
+				E8744DF72444BBC40079BC59 /* BaseNavigationBar.swift in Sources */,
 				E8744DD72444B8A50079BC59 /* HSDefine.swift in Sources */,
 				E8744DDB2444B8A50079BC59 /* HSEnum.swift in Sources */,
 				E8744DE42444B8A50079BC59 /* MenuPageView.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				E8744DD92444B8A50079BC59 /* HSStruct.swift in Sources */,
+				E8744DF32444BB4E0079BC59 /* BaseTabBarController.swift in Sources */,
 				E8744DE22444B8A50079BC59 /* VMCellFirst.swift in Sources */,
 				E8744DDF2444B8A50079BC59 /* HSUITestViewController.swift in Sources */,
 				E8744DDE2444B8A50079BC59 /* HSProgressView.swift in Sources */,
-				D15EB87D20E9F9A7009626DE /* AppDelegate.swift in Sources */,
 				E8744DE82444B8A50079BC59 /* ERJson.swift in Sources */,
 				E8744DD82444B8A50079BC59 /* HSObject.swift in Sources */,
 				E8744DDD2444B8A50079BC59 /* HSDottedView.swift in Sources */,
 				E8744DDC2444B8A50079BC59 /* HSCollectionViewFlowLayout.swift in Sources */,
 				E8744DE02444B8A50079BC59 /* VMUnit.swift in Sources */,
 				E8744DEF2444B95F0079BC59 /* BaseDelegate.swift in Sources */,
+				E8744DFA2444BCEF0079BC59 /* ViewController.swift in Sources */,
 				E8744DE72444B8A50079BC59 /* UnitIphoneX.swift in Sources */,
 				E8744DE62444B8A50079BC59 /* UnitDefine.swift in Sources */,
 				E8744DDA2444B8A50079BC59 /* HSCollectionViewCell.swift in Sources */,
+				E8744DF12444BB250079BC59 /* BaseNavigationController.swift in Sources */,
 				E8744DE92444B8A50079BC59 /* ERNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
