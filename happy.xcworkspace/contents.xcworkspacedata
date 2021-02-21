@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AliPush/AliPush.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:EXUIKit/EXUIKit.xcodeproj">
    </FileRef>
    <FileRef
@@ -9,8 +12,5 @@
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:AliPush/AliPush.xcodeproj">
    </FileRef>
 </Workspace>

@@ -376,7 +376,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7s";
+				VALID_ARCHS = "arm64 arm64e armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -411,7 +411,7 @@
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/AliPush";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7s";
+				VALID_ARCHS = "arm64 arm64e armv7s x86_64";
 			};
 			name = Release;
 		};

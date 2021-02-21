@@ -13,6 +13,17 @@
 		D199FA5B23B4961400A71CCF /* EXUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D199FA5923B4961400A71CCF /* EXUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1AC4A0723B4A8FE00B1DA20 /* AliPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */; };
 		D1AC4A0823B4A8FE00B1DA20 /* AliPush.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1E5BFD525232E73001C2A31 /* DSBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD425232E73001C2A31 /* DSBaseCollectionViewController.swift */; };
+		D1E5BFDF252334B2001C2A31 /* DSNibReusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD7252334B2001C2A31 /* DSNibReusable+UITableView.swift */; };
+		D1E5BFE0252334B2001C2A31 /* DSNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD8252334B2001C2A31 /* DSNibLoadable.swift */; };
+		D1E5BFE1252334B2001C2A31 /* DSReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD9252334B2001C2A31 /* DSReusable.swift */; };
+		D1E5BFE2252334B2001C2A31 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDA252334B2001C2A31 /* Refreshable.swift */; };
+		D1E5BFE3252334B2001C2A31 /* DSNibLoadable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDB252334B2001C2A31 /* DSNibLoadable+UIView.swift */; };
+		D1E5BFE4252334B2001C2A31 /* UIView+dialogable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDC252334B2001C2A31 /* UIView+dialogable.swift */; };
+		D1E5BFE5252334B2001C2A31 /* DSNibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDD252334B2001C2A31 /* DSNibReusable.swift */; };
+		D1E5BFE6252334B2001C2A31 /* DSNibReusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDE252334B2001C2A31 /* DSNibReusable+UICollectionView.swift */; };
+		D1E5BFE925241362001C2A31 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFE725241362001C2A31 /* ListCollectionViewCell.swift */; };
+		D1E5BFEA25241362001C2A31 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1E5BFE825241362001C2A31 /* ListCollectionViewCell.xib */; };
 		E8744DD62444B8A50079BC59 /* HSShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DB72444B8A50079BC59 /* HSShowViewController.swift */; };
 		E8744DD72444B8A50079BC59 /* HSDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DB82444B8A50079BC59 /* HSDefine.swift */; };
 		E8744DD82444B8A50079BC59 /* HSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DB92444B8A50079BC59 /* HSObject.swift */; };
@@ -73,6 +84,17 @@
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D199FA5923B4961400A71CCF /* EXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AliPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E5BFD425232E73001C2A31 /* DSBaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSBaseCollectionViewController.swift; sourceTree = "<group>"; };
+		D1E5BFD7252334B2001C2A31 /* DSNibReusable+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibReusable+UITableView.swift"; sourceTree = "<group>"; };
+		D1E5BFD8252334B2001C2A31 /* DSNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibLoadable.swift; sourceTree = "<group>"; };
+		D1E5BFD9252334B2001C2A31 /* DSReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSReusable.swift; sourceTree = "<group>"; };
+		D1E5BFDA252334B2001C2A31 /* Refreshable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
+		D1E5BFDB252334B2001C2A31 /* DSNibLoadable+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibLoadable+UIView.swift"; sourceTree = "<group>"; };
+		D1E5BFDC252334B2001C2A31 /* UIView+dialogable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+dialogable.swift"; sourceTree = "<group>"; };
+		D1E5BFDD252334B2001C2A31 /* DSNibReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibReusable.swift; sourceTree = "<group>"; };
+		D1E5BFDE252334B2001C2A31 /* DSNibReusable+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibReusable+UICollectionView.swift"; sourceTree = "<group>"; };
+		D1E5BFE725241362001C2A31 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1E5BFE825241362001C2A31 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
 		E8744DB72444B8A50079BC59 /* HSShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSShowViewController.swift; sourceTree = "<group>"; };
 		E8744DB82444B8A50079BC59 /* HSDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSDefine.swift; sourceTree = "<group>"; };
 		E8744DB92444B8A50079BC59 /* HSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSObject.swift; sourceTree = "<group>"; };
@@ -154,6 +176,7 @@
 		D15EB87B20E9F9A7009626DE /* happySwift */ = {
 			isa = PBXGroup;
 			children = (
+				D1E5BFD6252334B2001C2A31 /* protocols */,
 				E8744DCC2444B8A50079BC59 /* api */,
 				E8744DCF2444B8A50079BC59 /* assets */,
 				E8744DB42444B8A50079BC59 /* base */,
@@ -167,6 +190,21 @@
 			path = happySwift;
 			sourceTree = "<group>";
 		};
+		D1E5BFD6252334B2001C2A31 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D1E5BFD7252334B2001C2A31 /* DSNibReusable+UITableView.swift */,
+				D1E5BFD8252334B2001C2A31 /* DSNibLoadable.swift */,
+				D1E5BFD9252334B2001C2A31 /* DSReusable.swift */,
+				D1E5BFDA252334B2001C2A31 /* Refreshable.swift */,
+				D1E5BFDB252334B2001C2A31 /* DSNibLoadable+UIView.swift */,
+				D1E5BFDC252334B2001C2A31 /* UIView+dialogable.swift */,
+				D1E5BFDD252334B2001C2A31 /* DSNibReusable.swift */,
+				D1E5BFDE252334B2001C2A31 /* DSNibReusable+UICollectionView.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
 		E8744DB42444B8A50079BC59 /* base */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +213,7 @@
 				E8744DF22444BB4E0079BC59 /* BaseTabBarController.swift */,
 				E8744DF42444BB8D0079BC59 /* BaseViewController.swift */,
 				E8744DF62444BBC40079BC59 /* BaseNavigationBar.swift */,
+				D1E5BFD425232E73001C2A31 /* DSBaseCollectionViewController.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -265,11 +304,11 @@
 			isa = PBXGroup;
 			children = (
 				E8744DF92444BCEF0079BC59 /* AppDelegate.swift */,
-				E8744DF82444BCEF0079BC59 /* ViewController.swift */,
 				E8744DD42444B8A50079BC59 /* LaunchScreen.storyboard */,
 				E8744DD52444B8A50079BC59 /* Main.storyboard */,
-				E8744DFC2444BD5A0079BC59 /* MainTabBarController.swift */,
 				E8744DFE2444BDBD0079BC59 /* MainNavigationController.swift */,
+				E8744DFC2444BD5A0079BC59 /* MainTabBarController.swift */,
+				E8744DF82444BCEF0079BC59 /* ViewController.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -278,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				E8744E012444C00A0079BC59 /* HomeViewController.swift */,
+				D1E5BFE725241362001C2A31 /* ListCollectionViewCell.swift */,
+				D1E5BFE825241362001C2A31 /* ListCollectionViewCell.xib */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -352,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E5BFEA25241362001C2A31 /* ListCollectionViewCell.xib in Resources */,
 				E8744DEC2444B8A50079BC59 /* LaunchScreen.storyboard in Resources */,
 				E8744DEA2444B8A50079BC59 /* Assets.xcassets in Resources */,
 				E8744DEB2444B8A50079BC59 /* resources.bundle in Resources */,
@@ -405,18 +447,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */,
+				D1E5BFE5252334B2001C2A31 /* DSNibReusable.swift in Sources */,
 				E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */,
 				E8744E022444C00A0079BC59 /* HomeViewController.swift in Sources */,
 				E8744DD62444B8A50079BC59 /* HSShowViewController.swift in Sources */,
 				E8744DE52444B8A50079BC59 /* VMCellSecond.swift in Sources */,
 				E8744DE32444B8A50079BC59 /* VMMirrorCell.swift in Sources */,
+				D1E5BFE1252334B2001C2A31 /* DSReusable.swift in Sources */,
 				E8744DE12444B8A50079BC59 /* MenuPageViewController.swift in Sources */,
+				D1E5BFD525232E73001C2A31 /* DSBaseCollectionViewController.swift in Sources */,
+				D1E5BFE925241362001C2A31 /* ListCollectionViewCell.swift in Sources */,
 				E8744DFB2444BCEF0079BC59 /* AppDelegate.swift in Sources */,
 				E8744DF52444BB8D0079BC59 /* BaseViewController.swift in Sources */,
 				E8744DF72444BBC40079BC59 /* BaseNavigationBar.swift in Sources */,
+				D1E5BFE4252334B2001C2A31 /* UIView+dialogable.swift in Sources */,
 				E8744DD72444B8A50079BC59 /* HSDefine.swift in Sources */,
 				E8744DDB2444B8A50079BC59 /* HSEnum.swift in Sources */,
 				E8744DE42444B8A50079BC59 /* MenuPageView.swift in Sources */,
+				D1E5BFE2252334B2001C2A31 /* Refreshable.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				E8744DD92444B8A50079BC59 /* HSStruct.swift in Sources */,
 				E8744DF32444BB4E0079BC59 /* BaseTabBarController.swift in Sources */,
@@ -425,12 +473,16 @@
 				E8744DDE2444B8A50079BC59 /* HSProgressView.swift in Sources */,
 				E8744DE82444B8A50079BC59 /* ERJson.swift in Sources */,
 				E8744DD82444B8A50079BC59 /* HSObject.swift in Sources */,
+				D1E5BFE6252334B2001C2A31 /* DSNibReusable+UICollectionView.swift in Sources */,
 				E8744DDD2444B8A50079BC59 /* HSDottedView.swift in Sources */,
 				E8744DDC2444B8A50079BC59 /* HSCollectionViewFlowLayout.swift in Sources */,
 				E8744DE02444B8A50079BC59 /* VMUnit.swift in Sources */,
 				E8744DEF2444B95F0079BC59 /* BaseDelegate.swift in Sources */,
+				D1E5BFE0252334B2001C2A31 /* DSNibLoadable.swift in Sources */,
 				E8744DFA2444BCEF0079BC59 /* ViewController.swift in Sources */,
 				E8744DE72444B8A50079BC59 /* UnitIphoneX.swift in Sources */,
+				D1E5BFDF252334B2001C2A31 /* DSNibReusable+UITableView.swift in Sources */,
+				D1E5BFE3252334B2001C2A31 /* DSNibLoadable+UIView.swift in Sources */,
 				E8744DE62444B8A50079BC59 /* UnitDefine.swift in Sources */,
 				E8744DDA2444B8A50079BC59 /* HSCollectionViewCell.swift in Sources */,
 				E8744DF12444BB250079BC59 /* BaseNavigationController.swift in Sources */,

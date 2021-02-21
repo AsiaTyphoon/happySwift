@@ -10,21 +10,20 @@ import UIKit
 
 class HomeViewController: BaseViewController {
 
+    fileprivate var myViewModel = sss.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // 使用数据来驱动UI
+        
+        view.addSubview(myViewModel.collectionView)
+        myViewModel.collectionView.frame = view.bounds
+        myViewModel.collectionView.backgroundColor = .white
+        
+        myViewModel.refreshData(showLoading: false)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+

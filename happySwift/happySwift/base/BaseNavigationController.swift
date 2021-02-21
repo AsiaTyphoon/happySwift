@@ -10,10 +10,12 @@ import UIKit
 
 open class BaseNavigationController: UINavigationController {
 
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // 隐藏导航栏，使用自定义导航栏
+        isNavigationBarHidden = true
     }
 
 }
