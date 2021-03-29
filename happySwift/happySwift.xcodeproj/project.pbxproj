@@ -67,7 +67,9 @@
 		E8744DFB2444BCEF0079BC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DF92444BCEF0079BC59 /* AppDelegate.swift */; };
 		E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DFC2444BD5A0079BC59 /* MainTabBarController.swift */; };
 		E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DFE2444BDBD0079BC59 /* MainNavigationController.swift */; };
-		E8744E022444C00A0079BC59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744E012444C00A0079BC59 /* HomeViewController.swift */; };
+		E88F09AF24460014002CB90B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F09AD24460014002CB90B /* HomeViewController.swift */; };
+		E88F09B12446003D002CB90B /* IconItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F09B02446003D002CB90B /* IconItemView.swift */; };
+		E88F09B32446005E002CB90B /* IconItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E88F09B22446005E002CB90B /* IconItemView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,8 +79,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D199FA5B23B4961400A71CCF /* EXUIKit.framework in Embed Frameworks */,
-				D1AC4A0823B4A8FE00B1DA20 /* AliPush.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +148,9 @@
 		E8744DF92444BCEF0079BC59 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8744DFC2444BD5A0079BC59 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E8744DFE2444BDBD0079BC59 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		E8744E012444C00A0079BC59 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E88F09AD24460014002CB90B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E88F09B02446003D002CB90B /* IconItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconItemView.swift; sourceTree = "<group>"; };
+		E88F09B22446005E002CB90B /* IconItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconItemView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +158,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1AC4A0723B4A8FE00B1DA20 /* AliPush.framework in Frameworks */,
-				D199FA5A23B4961400A71CCF /* EXUIKit.framework in Frameworks */,
 				0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +176,6 @@
 		D15EB87020E9F9A7009626DE = {
 			isa = PBXGroup;
 			children = (
-				D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */,
-				D199FA5923B4961400A71CCF /* EXUIKit.framework */,
 				D15EB87B20E9F9A7009626DE /* happySwift */,
 				D15EB87A20E9F9A7009626DE /* Products */,
 				EF1EE9FE99F09D1D8E0C4112 /* Pods */,
@@ -373,8 +371,27 @@
 				E8744E012444C00A0079BC59 /* HomeViewController.swift */,
 				D1E5BFE725241362001C2A31 /* ListCollectionViewCell.swift */,
 				D1E5BFE825241362001C2A31 /* ListCollectionViewCell.xib */,
+				E88F09AC24460014002CB90B /* vc */,
+				E88F09AE24460014002CB90B /* view */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		E88F09AC24460014002CB90B /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				E88F09AD24460014002CB90B /* HomeViewController.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		E88F09AE24460014002CB90B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E88F09B02446003D002CB90B /* IconItemView.swift */,
+				E88F09B22446005E002CB90B /* IconItemView.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		EF1EE9FE99F09D1D8E0C4112 /* Pods */ = {
@@ -452,6 +469,7 @@
 				E8744DEA2444B8A50079BC59 /* Assets.xcassets in Resources */,
 				E8744DEB2444B8A50079BC59 /* resources.bundle in Resources */,
 				E8744DED2444B8A50079BC59 /* Main.storyboard in Resources */,
+				E88F09B32446005E002CB90B /* IconItemView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,11 +519,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1FAF87E26034A440008D092 /* DSKeyboardProtocol.swift in Sources */,
+				E88F09B12446003D002CB90B /* IconItemView.swift in Sources */,
 				E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */,
 				D1FAF87526034A440008D092 /* DSNibReusable.swift in Sources */,
 				E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */,
 				E8744E022444C00A0079BC59 /* HomeViewController.swift in Sources */,
 				D1FAF88C26034AC10008D092 /* DSVMCollectionViewRow.swift in Sources */,
+				E88F09AF24460014002CB90B /* HomeViewController.swift in Sources */,
 				E8744DD62444B8A50079BC59 /* HSShowViewController.swift in Sources */,
 				D1FAF87726034A440008D092 /* DSNibReusable+UITableView.swift in Sources */,
 				E8744DE52444B8A50079BC59 /* VMCellSecond.swift in Sources */,
