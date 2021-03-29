@@ -14,16 +14,26 @@
 		D1AC4A0723B4A8FE00B1DA20 /* AliPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */; };
 		D1AC4A0823B4A8FE00B1DA20 /* AliPush.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1E5BFD525232E73001C2A31 /* DSBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD425232E73001C2A31 /* DSBaseCollectionViewController.swift */; };
-		D1E5BFDF252334B2001C2A31 /* DSNibReusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD7252334B2001C2A31 /* DSNibReusable+UITableView.swift */; };
-		D1E5BFE0252334B2001C2A31 /* DSNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD8252334B2001C2A31 /* DSNibLoadable.swift */; };
-		D1E5BFE1252334B2001C2A31 /* DSReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFD9252334B2001C2A31 /* DSReusable.swift */; };
-		D1E5BFE2252334B2001C2A31 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDA252334B2001C2A31 /* Refreshable.swift */; };
-		D1E5BFE3252334B2001C2A31 /* DSNibLoadable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDB252334B2001C2A31 /* DSNibLoadable+UIView.swift */; };
-		D1E5BFE4252334B2001C2A31 /* UIView+dialogable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDC252334B2001C2A31 /* UIView+dialogable.swift */; };
-		D1E5BFE5252334B2001C2A31 /* DSNibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDD252334B2001C2A31 /* DSNibReusable.swift */; };
-		D1E5BFE6252334B2001C2A31 /* DSNibReusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFDE252334B2001C2A31 /* DSNibReusable+UICollectionView.swift */; };
 		D1E5BFE925241362001C2A31 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5BFE725241362001C2A31 /* ListCollectionViewCell.swift */; };
 		D1E5BFEA25241362001C2A31 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1E5BFE825241362001C2A31 /* ListCollectionViewCell.xib */; };
+		D1FAF87326034A440008D092 /* DSNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86726034A440008D092 /* DSNibLoadable.swift */; };
+		D1FAF87426034A440008D092 /* DSRouterParamsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86826034A440008D092 /* DSRouterParamsProtocol.swift */; };
+		D1FAF87526034A440008D092 /* DSNibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86926034A440008D092 /* DSNibReusable.swift */; };
+		D1FAF87626034A440008D092 /* UIView+dialogable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86A26034A440008D092 /* UIView+dialogable.swift */; };
+		D1FAF87726034A440008D092 /* DSNibReusable+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86B26034A440008D092 /* DSNibReusable+UITableView.swift */; };
+		D1FAF87826034A440008D092 /* EnumCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86C26034A440008D092 /* EnumCodable.swift */; };
+		D1FAF87926034A440008D092 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86D26034A440008D092 /* Refreshable.swift */; };
+		D1FAF87A26034A440008D092 /* DSNibLoadable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86E26034A440008D092 /* DSNibLoadable+UIView.swift */; };
+		D1FAF87B26034A440008D092 /* DSPopupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86F26034A440008D092 /* DSPopupProtocol.swift */; };
+		D1FAF87C26034A440008D092 /* DSReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF87026034A440008D092 /* DSReusable.swift */; };
+		D1FAF87D26034A440008D092 /* DSNibReusable+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF87126034A440008D092 /* DSNibReusable+UICollectionView.swift */; };
+		D1FAF87E26034A440008D092 /* DSKeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF87226034A440008D092 /* DSKeyboardProtocol.swift */; };
+		D1FAF88826034AC10008D092 /* DSVMTableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF88126034AC10008D092 /* DSVMTableViewRow.swift */; };
+		D1FAF88926034AC10008D092 /* DSVMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF88226034AC10008D092 /* DSVMTableView.swift */; };
+		D1FAF88A26034AC10008D092 /* DSVMTableViewRowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF88326034AC10008D092 /* DSVMTableViewRowProtocol.swift */; };
+		D1FAF88B26034AC10008D092 /* DSVMCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF88526034AC10008D092 /* DSVMCollectionView.swift */; };
+		D1FAF88C26034AC10008D092 /* DSVMCollectionViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF88626034AC10008D092 /* DSVMCollectionViewRow.swift */; };
+		D1FAF88D26034AC10008D092 /* DSVMCollectionViewRowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF88726034AC10008D092 /* DSVMCollectionViewRowProtocol.swift */; };
 		E8744DD62444B8A50079BC59 /* HSShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DB72444B8A50079BC59 /* HSShowViewController.swift */; };
 		E8744DD72444B8A50079BC59 /* HSDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DB82444B8A50079BC59 /* HSDefine.swift */; };
 		E8744DD82444B8A50079BC59 /* HSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744DB92444B8A50079BC59 /* HSObject.swift */; };
@@ -85,16 +95,26 @@
 		D199FA5923B4961400A71CCF /* EXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AC4A0623B4A8FE00B1DA20 /* AliPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AliPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E5BFD425232E73001C2A31 /* DSBaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSBaseCollectionViewController.swift; sourceTree = "<group>"; };
-		D1E5BFD7252334B2001C2A31 /* DSNibReusable+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibReusable+UITableView.swift"; sourceTree = "<group>"; };
-		D1E5BFD8252334B2001C2A31 /* DSNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibLoadable.swift; sourceTree = "<group>"; };
-		D1E5BFD9252334B2001C2A31 /* DSReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSReusable.swift; sourceTree = "<group>"; };
-		D1E5BFDA252334B2001C2A31 /* Refreshable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
-		D1E5BFDB252334B2001C2A31 /* DSNibLoadable+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibLoadable+UIView.swift"; sourceTree = "<group>"; };
-		D1E5BFDC252334B2001C2A31 /* UIView+dialogable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+dialogable.swift"; sourceTree = "<group>"; };
-		D1E5BFDD252334B2001C2A31 /* DSNibReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibReusable.swift; sourceTree = "<group>"; };
-		D1E5BFDE252334B2001C2A31 /* DSNibReusable+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibReusable+UICollectionView.swift"; sourceTree = "<group>"; };
 		D1E5BFE725241362001C2A31 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1E5BFE825241362001C2A31 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		D1FAF86726034A440008D092 /* DSNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibLoadable.swift; sourceTree = "<group>"; };
+		D1FAF86826034A440008D092 /* DSRouterParamsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSRouterParamsProtocol.swift; sourceTree = "<group>"; };
+		D1FAF86926034A440008D092 /* DSNibReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibReusable.swift; sourceTree = "<group>"; };
+		D1FAF86A26034A440008D092 /* UIView+dialogable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+dialogable.swift"; sourceTree = "<group>"; };
+		D1FAF86B26034A440008D092 /* DSNibReusable+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibReusable+UITableView.swift"; sourceTree = "<group>"; };
+		D1FAF86C26034A440008D092 /* EnumCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumCodable.swift; sourceTree = "<group>"; };
+		D1FAF86D26034A440008D092 /* Refreshable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
+		D1FAF86E26034A440008D092 /* DSNibLoadable+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibLoadable+UIView.swift"; sourceTree = "<group>"; };
+		D1FAF86F26034A440008D092 /* DSPopupProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSPopupProtocol.swift; sourceTree = "<group>"; };
+		D1FAF87026034A440008D092 /* DSReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSReusable.swift; sourceTree = "<group>"; };
+		D1FAF87126034A440008D092 /* DSNibReusable+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSNibReusable+UICollectionView.swift"; sourceTree = "<group>"; };
+		D1FAF87226034A440008D092 /* DSKeyboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSKeyboardProtocol.swift; sourceTree = "<group>"; };
+		D1FAF88126034AC10008D092 /* DSVMTableViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVMTableViewRow.swift; sourceTree = "<group>"; };
+		D1FAF88226034AC10008D092 /* DSVMTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVMTableView.swift; sourceTree = "<group>"; };
+		D1FAF88326034AC10008D092 /* DSVMTableViewRowProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVMTableViewRowProtocol.swift; sourceTree = "<group>"; };
+		D1FAF88526034AC10008D092 /* DSVMCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVMCollectionView.swift; sourceTree = "<group>"; };
+		D1FAF88626034AC10008D092 /* DSVMCollectionViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVMCollectionViewRow.swift; sourceTree = "<group>"; };
+		D1FAF88726034AC10008D092 /* DSVMCollectionViewRowProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVMCollectionViewRowProtocol.swift; sourceTree = "<group>"; };
 		E8744DB72444B8A50079BC59 /* HSShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSShowViewController.swift; sourceTree = "<group>"; };
 		E8744DB82444B8A50079BC59 /* HSDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSDefine.swift; sourceTree = "<group>"; };
 		E8744DB92444B8A50079BC59 /* HSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSObject.swift; sourceTree = "<group>"; };
@@ -176,6 +196,7 @@
 		D15EB87B20E9F9A7009626DE /* happySwift */ = {
 			isa = PBXGroup;
 			children = (
+				D1FAF87F26034AC10008D092 /* mvvm */,
 				D1E5BFD6252334B2001C2A31 /* protocols */,
 				E8744DCC2444B8A50079BC59 /* api */,
 				E8744DCF2444B8A50079BC59 /* assets */,
@@ -193,26 +214,59 @@
 		D1E5BFD6252334B2001C2A31 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
-				D1E5BFD7252334B2001C2A31 /* DSNibReusable+UITableView.swift */,
-				D1E5BFD8252334B2001C2A31 /* DSNibLoadable.swift */,
-				D1E5BFD9252334B2001C2A31 /* DSReusable.swift */,
-				D1E5BFDA252334B2001C2A31 /* Refreshable.swift */,
-				D1E5BFDB252334B2001C2A31 /* DSNibLoadable+UIView.swift */,
-				D1E5BFDC252334B2001C2A31 /* UIView+dialogable.swift */,
-				D1E5BFDD252334B2001C2A31 /* DSNibReusable.swift */,
-				D1E5BFDE252334B2001C2A31 /* DSNibReusable+UICollectionView.swift */,
+				D1FAF87226034A440008D092 /* DSKeyboardProtocol.swift */,
+				D1FAF86726034A440008D092 /* DSNibLoadable.swift */,
+				D1FAF86E26034A440008D092 /* DSNibLoadable+UIView.swift */,
+				D1FAF86926034A440008D092 /* DSNibReusable.swift */,
+				D1FAF87126034A440008D092 /* DSNibReusable+UICollectionView.swift */,
+				D1FAF86B26034A440008D092 /* DSNibReusable+UITableView.swift */,
+				D1FAF86F26034A440008D092 /* DSPopupProtocol.swift */,
+				D1FAF87026034A440008D092 /* DSReusable.swift */,
+				D1FAF86826034A440008D092 /* DSRouterParamsProtocol.swift */,
+				D1FAF86C26034A440008D092 /* EnumCodable.swift */,
+				D1FAF86D26034A440008D092 /* Refreshable.swift */,
+				D1FAF86A26034A440008D092 /* UIView+dialogable.swift */,
 			);
 			path = protocols;
+			sourceTree = "<group>";
+		};
+		D1FAF87F26034AC10008D092 /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAF88026034AC10008D092 /* tableView */,
+				D1FAF88426034AC10008D092 /* collectionView */,
+			);
+			path = mvvm;
+			sourceTree = "<group>";
+		};
+		D1FAF88026034AC10008D092 /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAF88126034AC10008D092 /* DSVMTableViewRow.swift */,
+				D1FAF88226034AC10008D092 /* DSVMTableView.swift */,
+				D1FAF88326034AC10008D092 /* DSVMTableViewRowProtocol.swift */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		D1FAF88426034AC10008D092 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D1FAF88526034AC10008D092 /* DSVMCollectionView.swift */,
+				D1FAF88626034AC10008D092 /* DSVMCollectionViewRow.swift */,
+				D1FAF88726034AC10008D092 /* DSVMCollectionViewRowProtocol.swift */,
+			);
+			path = collectionView;
 			sourceTree = "<group>";
 		};
 		E8744DB42444B8A50079BC59 /* base */ = {
 			isa = PBXGroup;
 			children = (
 				E8744DEE2444B95F0079BC59 /* BaseDelegate.swift */,
+				E8744DF62444BBC40079BC59 /* BaseNavigationBar.swift */,
 				E8744DF02444BB250079BC59 /* BaseNavigationController.swift */,
 				E8744DF22444BB4E0079BC59 /* BaseTabBarController.swift */,
 				E8744DF42444BB8D0079BC59 /* BaseViewController.swift */,
-				E8744DF62444BBC40079BC59 /* BaseNavigationBar.swift */,
 				D1E5BFD425232E73001C2A31 /* DSBaseCollectionViewController.swift */,
 			);
 			path = base;
@@ -446,44 +500,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FAF87E26034A440008D092 /* DSKeyboardProtocol.swift in Sources */,
 				E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */,
-				D1E5BFE5252334B2001C2A31 /* DSNibReusable.swift in Sources */,
+				D1FAF87526034A440008D092 /* DSNibReusable.swift in Sources */,
 				E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */,
 				E8744E022444C00A0079BC59 /* HomeViewController.swift in Sources */,
+				D1FAF88C26034AC10008D092 /* DSVMCollectionViewRow.swift in Sources */,
 				E8744DD62444B8A50079BC59 /* HSShowViewController.swift in Sources */,
+				D1FAF87726034A440008D092 /* DSNibReusable+UITableView.swift in Sources */,
 				E8744DE52444B8A50079BC59 /* VMCellSecond.swift in Sources */,
 				E8744DE32444B8A50079BC59 /* VMMirrorCell.swift in Sources */,
-				D1E5BFE1252334B2001C2A31 /* DSReusable.swift in Sources */,
 				E8744DE12444B8A50079BC59 /* MenuPageViewController.swift in Sources */,
 				D1E5BFD525232E73001C2A31 /* DSBaseCollectionViewController.swift in Sources */,
 				D1E5BFE925241362001C2A31 /* ListCollectionViewCell.swift in Sources */,
+				D1FAF87B26034A440008D092 /* DSPopupProtocol.swift in Sources */,
 				E8744DFB2444BCEF0079BC59 /* AppDelegate.swift in Sources */,
 				E8744DF52444BB8D0079BC59 /* BaseViewController.swift in Sources */,
+				D1FAF87D26034A440008D092 /* DSNibReusable+UICollectionView.swift in Sources */,
+				D1FAF88A26034AC10008D092 /* DSVMTableViewRowProtocol.swift in Sources */,
+				D1FAF87C26034A440008D092 /* DSReusable.swift in Sources */,
 				E8744DF72444BBC40079BC59 /* BaseNavigationBar.swift in Sources */,
-				D1E5BFE4252334B2001C2A31 /* UIView+dialogable.swift in Sources */,
+				D1FAF87A26034A440008D092 /* DSNibLoadable+UIView.swift in Sources */,
 				E8744DD72444B8A50079BC59 /* HSDefine.swift in Sources */,
+				D1FAF87926034A440008D092 /* Refreshable.swift in Sources */,
 				E8744DDB2444B8A50079BC59 /* HSEnum.swift in Sources */,
 				E8744DE42444B8A50079BC59 /* MenuPageView.swift in Sources */,
-				D1E5BFE2252334B2001C2A31 /* Refreshable.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				E8744DD92444B8A50079BC59 /* HSStruct.swift in Sources */,
 				E8744DF32444BB4E0079BC59 /* BaseTabBarController.swift in Sources */,
 				E8744DE22444B8A50079BC59 /* VMCellFirst.swift in Sources */,
 				E8744DDF2444B8A50079BC59 /* HSUITestViewController.swift in Sources */,
+				D1FAF88D26034AC10008D092 /* DSVMCollectionViewRowProtocol.swift in Sources */,
+				D1FAF87826034A440008D092 /* EnumCodable.swift in Sources */,
 				E8744DDE2444B8A50079BC59 /* HSProgressView.swift in Sources */,
 				E8744DE82444B8A50079BC59 /* ERJson.swift in Sources */,
 				E8744DD82444B8A50079BC59 /* HSObject.swift in Sources */,
-				D1E5BFE6252334B2001C2A31 /* DSNibReusable+UICollectionView.swift in Sources */,
+				D1FAF87626034A440008D092 /* UIView+dialogable.swift in Sources */,
+				D1FAF88926034AC10008D092 /* DSVMTableView.swift in Sources */,
 				E8744DDD2444B8A50079BC59 /* HSDottedView.swift in Sources */,
 				E8744DDC2444B8A50079BC59 /* HSCollectionViewFlowLayout.swift in Sources */,
 				E8744DE02444B8A50079BC59 /* VMUnit.swift in Sources */,
+				D1FAF87326034A440008D092 /* DSNibLoadable.swift in Sources */,
 				E8744DEF2444B95F0079BC59 /* BaseDelegate.swift in Sources */,
-				D1E5BFE0252334B2001C2A31 /* DSNibLoadable.swift in Sources */,
+				D1FAF88B26034AC10008D092 /* DSVMCollectionView.swift in Sources */,
+				D1FAF87426034A440008D092 /* DSRouterParamsProtocol.swift in Sources */,
 				E8744DFA2444BCEF0079BC59 /* ViewController.swift in Sources */,
 				E8744DE72444B8A50079BC59 /* UnitIphoneX.swift in Sources */,
-				D1E5BFDF252334B2001C2A31 /* DSNibReusable+UITableView.swift in Sources */,
-				D1E5BFE3252334B2001C2A31 /* DSNibLoadable+UIView.swift in Sources */,
 				E8744DE62444B8A50079BC59 /* UnitDefine.swift in Sources */,
+				D1FAF88826034AC10008D092 /* DSVMTableViewRow.swift in Sources */,
 				E8744DDA2444B8A50079BC59 /* HSCollectionViewCell.swift in Sources */,
 				E8744DF12444BB250079BC59 /* BaseNavigationController.swift in Sources */,
 				E8744DE92444B8A50079BC59 /* ERNetwork.swift in Sources */,

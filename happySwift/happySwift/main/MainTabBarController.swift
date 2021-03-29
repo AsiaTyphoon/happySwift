@@ -17,10 +17,11 @@ class MainTabBarController: BaseTabBarController {
         
         let homeVC = HomeViewController()
         homeVC.tabBarItem.title = "首页"
-        viewControllers = [homeVC]
         
         let vc = ViewController()
         vc.tabBarItem.title = "我的"
+        
         viewControllers = [homeVC, vc]
     }
 }
+
