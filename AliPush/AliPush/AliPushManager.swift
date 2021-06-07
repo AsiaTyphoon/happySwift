@@ -21,13 +21,13 @@ public var AliPushAppSecret: String {
 
 //MARK:-
 /// 阿里推送管理器
-open class APush: NSObject {
+open class AliPushManager: NSObject {
     
-    static public let shared = APush()
+    static public let shared = AliPushManager()
 }
 
 //MARK:-
-public extension APush {
+public extension AliPushManager {
     
     /// 阿里推送初始化
     static func configure(with appKey: String,

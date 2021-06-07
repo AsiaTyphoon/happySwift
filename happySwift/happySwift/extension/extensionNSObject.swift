@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 //MARK:-
 public extension NSObject {
@@ -115,4 +116,62 @@ public extension NSObject {
             handler()
         }
     }
+}
+
+//MARK:-
+extension NSObject {
+    
+    /// 根据URL生成二维码图片
+    public class func generate(from url: String) -> UIImage? {
+        
+        guard let data = url.data(using: .utf8) else {
+            return nil
+        }
+        
+        guard let filter = CIFilter.init(name: "CIQRCodeGenerator") else {
+            return nil
+        }
+        
+        let context = CIContext()
+        filter.setValue(data, forKey: "inputMessage")
+        let transform = CGAffineTransform(scaleX: 7, y: 7)
+        guard let output = filter.outputImage?.transformed(by: transform) else {
+            return nil
+        }
+        
+        guard let cgImage = context.createCGImage(output, from: output.extent) else {
+            return nil
+        }
+        return UIImage(cgImage: cgImage)
+    }
+
+}
+
+//MARK:-
+extension NSObject {
+    
+    /// 获取当前最顶部控制器
+    public func exTopVC() -> UIViewController? {
+        guard let rootViewController = UIApplication.shared.keyWindow?.rootViewController else { return nil }
+        return topVC(for: rootViewController)
+    }
+    
+    fileprivate func topVC(for rootViewController: UIViewController) -> UIViewController? {
+        
+        if let tabbarController = rootViewController as? UITabBarController {
+            guard let selectedViewController = tabbarController.selectedViewController else { return nil }
+            return topVC(for: selectedViewController)
+        }
+        else if let navigationController = rootViewController as? UINavigationController {
+            guard let visibleViewController = navigationController.visibleViewController else { return nil }
+            return topVC(for: visibleViewController)
+        }
+        else if let presentedController = rootViewController.presentedViewController {
+            return topVC(for: presentedController)
+        }
+        else {
+            return rootViewController
+        }
+    }
+    
 }

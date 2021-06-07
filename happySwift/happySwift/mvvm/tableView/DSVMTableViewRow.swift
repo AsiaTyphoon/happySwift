@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 //MARK:-
 open class DSVMTableViewRow<T>: NSObject {

@@ -8,7 +8,9 @@
 
 import UIKit
 
-open class BaseNavigationBar: UIView {
+open class BaseNavigationBar: UIView, DSNibLoadable {
 
-
+    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
 }

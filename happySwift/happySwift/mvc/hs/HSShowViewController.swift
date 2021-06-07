@@ -8,15 +8,16 @@
 
 import UIKit
 
-class HSShowViewController: UIViewController {
+//MARK:-
+class HSShowViewController: BaseViewController {
 
     var fileUrl: URL?
+    fileprivate let textView = UITextView(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let textView = UITextView(frame: self.view.frame)
         self.view.addSubview(textView)
         
         guard let g_fileUrl = fileUrl else {
@@ -41,14 +42,8 @@ class HSShowViewController: UIViewController {
         print("----- deinit ----- \(self.classForCoder)")
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        textView.frame = CGRect.init(x: 0, y: safeAreaNavigationBar, width: view.frame.width, height: view.frame.height - safeAreaNavigationBar - safeAreaInsetsBottom)
     }
-    */
-
 }

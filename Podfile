@@ -19,9 +19,6 @@ target 'happySwift' do
     pod 'AlicloudPush', '1.9.9.4'
 end
 
-target 'EXUIKit' do
-    project 'EXUIKit/EXUIKit.xcodeproj'
-end
 
 target 'AliPush' do
   project 'AliPush/AliPush.xcodeproj'

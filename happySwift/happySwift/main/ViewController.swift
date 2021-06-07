@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 struct Person {
     struct Sex {
@@ -72,6 +73,28 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        let playurl = "http://vjs.zencdn.net/v/oceans.mp4"
+        guard let url = URL.init(string: playurl) else {
+            return
+        }
+        let item = AVPlayerItem.init(url: url)
+        let player = AVPlayer.init(playerItem: item)
+        let playerLayer = AVPlayerLayer.init(layer: player)
+        playerLayer.frame = CGRect.init(x: 0, y: 0, width: 300, height: 300)
+        playerLayer.backgroundColor = UIColor.green.cgColor
+        playerLayer.videoGravity = .resizeAspectFill
+
+        let playerView = UIView.init(frame: CGRect.init(x: 0, y: 150, width: 300, height: 300))
+        playerView.backgroundColor = UIColor.red
+        playerView.layer.addSublayer(playerLayer)
+
+        //UIApplication.shared.keyWindow?.addSubview(playerView)
+        
+//        let p = DSPlayer.init(videoUrl: playurl)
+//        p.frame = CGRect.init(x: 0, y: 0, width: 300, height: 300)
+//        playerView.addSubview(p)
+        
+        player.play()
     }
     
     override func didReceiveMemoryWarning() {

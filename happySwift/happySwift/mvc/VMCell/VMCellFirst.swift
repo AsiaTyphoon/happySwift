@@ -95,7 +95,7 @@ class UILabelViewController: UIViewController, PaikeScrollViewDelegate {
 //        return
 
 
-        let videos = ["http://ksy.fffffive.com/mda-hinp1ik37b0rt1mj/mda-hinp1ik37b0rt1mj.mp4",
+        let videos = ["http://filetest.baview.cn:33385/ad/videos/nmip-media/2021-05-08/47243748-v0-mp4/70D7CA588E558D2A4F179E6B18DB290C.mp4",
                       "http://ksy.fffffive.com/mda-himtqzs2un1u8x2v/mda-himtqzs2un1u8x2v.mp4",
                       "http://ksy.fffffive.com/mda-hiw5zixc1ghpgrhn/mda-hiw5zixc1ghpgrhn.mp4",
                       "http://ksy.fffffive.com/mda-hiw61ic7i4qkcvmx/mda-hiw61ic7i4qkcvmx.mp4",

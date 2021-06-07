@@ -15,7 +15,7 @@ public var isUpperIphoneX: Bool {
     if UIDevice.current.userInterfaceIdiom != .phone { return false }
     //FIXME: iPhone X最低支持iOS11.0
     if #available(iOS 11.0, *) {
-        if let keyWindow = UIApplication.shared.keyWindow, keyWindow.safeAreaInsets.bottom > 0.0 {
+        if let keyWindow = UIApplication.shared.windows.first, keyWindow.safeAreaInsets.bottom > 0.0 {
             return true
         }
     }

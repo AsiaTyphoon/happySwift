@@ -14,7 +14,7 @@
 		D1AC49FB23B4A6B200B1DA20 /* CloudPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC49F723B4A6B200B1DA20 /* CloudPushSDK.framework */; };
 		D1AC49FC23B4A6B200B1DA20 /* UTMini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC49F823B4A6B200B1DA20 /* UTMini.framework */; };
 		D1AC49FF23B4A70B00B1DA20 /* AliPush-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AC49FE23B4A70B00B1DA20 /* AliPush-Bridging-Header.h */; };
-		D1AC4A0123B4A76F00B1DA20 /* APush.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4A0023B4A76F00B1DA20 /* APush.swift */; };
+		D1AC4A0123B4A76F00B1DA20 /* AliPushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4A0023B4A76F00B1DA20 /* AliPushManager.swift */; };
 		D1AC4A0323B4A86800B1DA20 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0223B4A86800B1DA20 /* libz.tbd */; };
 		D1AC4A0523B4A87D00B1DA20 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AC4A0423B4A87C00B1DA20 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,7 @@
 		D1AC49F823B4A6B200B1DA20 /* UTMini.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTMini.framework; path = AliPush/framewords/UTMini.framework; sourceTree = "<group>"; };
 		D1AC49FD23B4A6E100B1DA20 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		D1AC49FE23B4A70B00B1DA20 /* AliPush-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AliPush-Bridging-Header.h"; sourceTree = "<group>"; };
-		D1AC4A0023B4A76F00B1DA20 /* APush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APush.swift; sourceTree = "<group>"; };
+		D1AC4A0023B4A76F00B1DA20 /* AliPushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPushManager.swift; sourceTree = "<group>"; };
 		D1AC4A0223B4A86800B1DA20 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D1AC4A0423B4A87C00B1DA20 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -90,7 +90,7 @@
 				D154194723B4A61C00F2E566 /* Info.plist */,
 				D1AC49FD23B4A6E100B1DA20 /* module.modulemap */,
 				D1AC49FE23B4A70B00B1DA20 /* AliPush-Bridging-Header.h */,
-				D1AC4A0023B4A76F00B1DA20 /* APush.swift */,
+				D1AC4A0023B4A76F00B1DA20 /* AliPushManager.swift */,
 			);
 			path = AliPush;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1AC4A0123B4A76F00B1DA20 /* APush.swift in Sources */,
+				D1AC4A0123B4A76F00B1DA20 /* AliPushManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

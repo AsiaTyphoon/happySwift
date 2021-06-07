@@ -5,9 +5,6 @@
       location = "group:AliPush/AliPush.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:EXUIKit/EXUIKit.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:happySwift/happySwift.xcodeproj">
    </FileRef>
    <FileRef

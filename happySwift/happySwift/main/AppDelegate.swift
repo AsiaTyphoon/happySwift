@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-@_exported import EXUIKit
 
 @UIApplicationMain
 class AppDelegate: BaseDelegate {

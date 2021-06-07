@@ -28,6 +28,8 @@ open class DSVMTableView: NSObject {
         tableView.showsHorizontalScrollIndicator = false
         tableView.mj_header = self.refreshHeader
         tableView.mj_footer = self.refreshFooter
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableView.automaticDimension
         return tableView
     }()
     
@@ -110,27 +112,6 @@ open class DSVMTableView: NSObject {
     
 }
 
-protocol ssss: IteratorProtocol {
-    associatedtype Element
-    func update(_ model: Element)
-}
-
-class moooooo: NSObject {
-    var s: String?
-}
-
-class mode: NSObject, ssss {
-    func next() -> moooooo? {
-        return nil
-    }
-    
-    typealias Element = moooooo
-    func update(_ model: Element) {
-        print(model.s)
-    }
-    
-    
-}
 
 //MARK:-
 extension DSVMTableView {
