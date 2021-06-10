@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */; };
+		D115E7672672199600933A9E /* JXPagingListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D115E7662672199600933A9E /* JXPagingListContainerView.swift */; };
 		D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */; };
 		D1632AB0265B96400025A2A3 /* extensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632AA4265B96400025A2A3 /* extensionUIColor.swift */; };
 		D1632AB1265B96400025A2A3 /* ExtensionUINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632AA5265B96400025A2A3 /* ExtensionUINib.swift */; };
@@ -32,6 +33,10 @@
 		D1632B30265BAA1A0025A2A3 /* TMSTableViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632B2E265BAA1A0025A2A3 /* TMSTableViewMenuCell.swift */; };
 		D1632B31265BAA1A0025A2A3 /* TMSTableViewMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1632B2F265BAA1A0025A2A3 /* TMSTableViewMenuCell.xib */; };
 		D1632B33265BAB140025A2A3 /* TMSTableViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632B32265BAB140025A2A3 /* TMSTableViewMenu.swift */; };
+		D18542F02671BB8A00927EB0 /* NestedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18542EF2671BB8A00927EB0 /* NestedViewController.swift */; };
+		D18542FF2671DDB900927EB0 /* NestedSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18542FE2671DDB900927EB0 /* NestedSubViewController.swift */; };
+		D18543012671DDD300927EB0 /* NestedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18543002671DDD300927EB0 /* NestedListViewController.swift */; };
+		D18543092672009200927EB0 /* DSPagingSmoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18543082672009200927EB0 /* DSPagingSmoothView.swift */; };
 		D1FAF87326034A440008D092 /* DSNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86726034A440008D092 /* DSNibLoadable.swift */; };
 		D1FAF87426034A440008D092 /* DSRouterParamsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86826034A440008D092 /* DSRouterParamsProtocol.swift */; };
 		D1FAF87526034A440008D092 /* DSNibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FAF86926034A440008D092 /* DSNibReusable.swift */; };
@@ -102,6 +107,7 @@
 		2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-happySwift/Pods-happySwift.release.xcconfig"; sourceTree = "<group>"; };
 		B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-happySwift/Pods-happySwift.debug.xcconfig"; sourceTree = "<group>"; };
+		D115E7662672199600933A9E /* JXPagingListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPagingListContainerView.swift; sourceTree = "<group>"; };
 		D15EB87920E9F9A7009626DE /* happySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15EB88420E9F9A7009626DE /* happySwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = happySwift.xcdatamodel; sourceTree = "<group>"; };
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +134,10 @@
 		D1632B2E265BAA1A0025A2A3 /* TMSTableViewMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSTableViewMenuCell.swift; sourceTree = "<group>"; };
 		D1632B2F265BAA1A0025A2A3 /* TMSTableViewMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMSTableViewMenuCell.xib; sourceTree = "<group>"; };
 		D1632B32265BAB140025A2A3 /* TMSTableViewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSTableViewMenu.swift; sourceTree = "<group>"; };
+		D18542EF2671BB8A00927EB0 /* NestedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedViewController.swift; sourceTree = "<group>"; };
+		D18542FE2671DDB900927EB0 /* NestedSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedSubViewController.swift; sourceTree = "<group>"; };
+		D18543002671DDD300927EB0 /* NestedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedListViewController.swift; sourceTree = "<group>"; };
+		D18543082672009200927EB0 /* DSPagingSmoothView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSPagingSmoothView.swift; sourceTree = "<group>"; };
 		D1FAF86726034A440008D092 /* DSNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibLoadable.swift; sourceTree = "<group>"; };
 		D1FAF86826034A440008D092 /* DSRouterParamsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSRouterParamsProtocol.swift; sourceTree = "<group>"; };
 		D1FAF86926034A440008D092 /* DSNibReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNibReusable.swift; sourceTree = "<group>"; };
@@ -270,6 +280,18 @@
 			path = tms;
 			sourceTree = "<group>";
 		};
+		D18542EE2671BB7700927EB0 /* nested */ = {
+			isa = PBXGroup;
+			children = (
+				D115E7662672199600933A9E /* JXPagingListContainerView.swift */,
+				D18543082672009200927EB0 /* DSPagingSmoothView.swift */,
+				D18542EF2671BB8A00927EB0 /* NestedViewController.swift */,
+				D18542FE2671DDB900927EB0 /* NestedSubViewController.swift */,
+				D18543002671DDD300927EB0 /* NestedListViewController.swift */,
+			);
+			path = nested;
+			sourceTree = "<group>";
+		};
 		D1E5BFD6252334B2001C2A31 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +356,7 @@
 		E8744DB52444B8A50079BC59 /* mvc */ = {
 			isa = PBXGroup;
 			children = (
+				D18542EE2671BB7700927EB0 /* nested */,
 				D1632B1F265BA6E00025A2A3 /* tms */,
 				E8744E002444BFE80079BC59 /* home */,
 				E8744DB62444B8A50079BC59 /* hs */,
@@ -569,6 +592,7 @@
 				E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */,
 				D1FAF87526034A440008D092 /* DSNibReusable.swift in Sources */,
 				E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */,
+				D18542FF2671DDB900927EB0 /* NestedSubViewController.swift in Sources */,
 				D1632AB8265B96400025A2A3 /* extensionNSAttributedString.swift in Sources */,
 				D1FAF88C26034AC10008D092 /* DSVMCollectionViewRow.swift in Sources */,
 				E8744DD62444B8A50079BC59 /* HSShowViewController.swift in Sources */,
@@ -591,6 +615,7 @@
 				D1632B33265BAB140025A2A3 /* TMSTableViewMenu.swift in Sources */,
 				D1FAF87926034A440008D092 /* Refreshable.swift in Sources */,
 				E8744DDB2444B8A50079BC59 /* HSEnum.swift in Sources */,
+				D18542F02671BB8A00927EB0 /* NestedViewController.swift in Sources */,
 				E8744DE42444B8A50079BC59 /* MenuPageView.swift in Sources */,
 				D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */,
 				D1632B30265BAA1A0025A2A3 /* TMSTableViewMenuCell.swift in Sources */,
@@ -603,6 +628,7 @@
 				E8744DDE2444B8A50079BC59 /* HSProgressView.swift in Sources */,
 				E8744DE82444B8A50079BC59 /* ERJson.swift in Sources */,
 				E8744DD82444B8A50079BC59 /* HSObject.swift in Sources */,
+				D18543012671DDD300927EB0 /* NestedListViewController.swift in Sources */,
 				D1632AB6265B96400025A2A3 /* extensionUIImage.swift in Sources */,
 				D1FAF87626034A440008D092 /* UIView+dialogable.swift in Sources */,
 				D1FAF88926034AC10008D092 /* DSVMTableView.swift in Sources */,
@@ -616,6 +642,8 @@
 				E8744DEF2444B95F0079BC59 /* BaseDelegate.swift in Sources */,
 				D1FAF88B26034AC10008D092 /* DSVMCollectionView.swift in Sources */,
 				D1632AB0265B96400025A2A3 /* extensionUIColor.swift in Sources */,
+				D115E7672672199600933A9E /* JXPagingListContainerView.swift in Sources */,
+				D18543092672009200927EB0 /* DSPagingSmoothView.swift in Sources */,
 				D1632B2B265BA8520025A2A3 /* HomeViewController.swift in Sources */,
 				D1FAF87426034A440008D092 /* DSRouterParamsProtocol.swift in Sources */,
 				D1632B23265BA7530025A2A3 /* TMSViewController.swift in Sources */,

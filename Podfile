@@ -17,6 +17,9 @@ target 'happySwift' do
     pod 'MJRefresh', '~> 3.1.15.3'
 
     pod 'AlicloudPush', '1.9.9.4'
+    pod 'JXSegmentedView','~> 1.2.7'
+    pod 'JXPagingView/Paging','~> 2.0.12'
+
 end
 
 
