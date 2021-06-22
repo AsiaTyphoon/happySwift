@@ -62,10 +62,14 @@ extension NestedListViewController: JXSegmentedListContainerViewListDelegate {
 }
 
 //MARK:-
-//extension NestedListViewController: DSPagingSmoothViewListViewDelegate {
-//    func listScrollView() -> UIScrollView {
-//        return tableView
-//    }
-//    
-//    
-//}
+extension NestedListViewController: DSPagingViewListViewDelegate {
+    func listViewDidScrollCallback(callback: @escaping (UIScrollView) -> ()) {
+        
+    }
+    
+    func listScrollView() -> UIScrollView {
+        return tableView
+    }
+    
+    
+}
