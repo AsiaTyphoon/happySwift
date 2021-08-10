@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */; };
 		D115E7672672199600933A9E /* DSPagingListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D115E7662672199600933A9E /* DSPagingListContainerView.swift */; };
+		D12B186726A1759E0084A256 /* AutoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B186626A1759E0084A256 /* AutoCollectionViewController.swift */; };
+		D12B186A26A177780084A256 /* AutoListOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B186826A177780084A256 /* AutoListOneCollectionViewCell.swift */; };
+		D12B186B26A177780084A256 /* AutoListOneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D12B186926A177780084A256 /* AutoListOneCollectionViewCell.xib */; };
+		D12B186E26A177870084A256 /* AutoListTwoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B186C26A177870084A256 /* AutoListTwoCollectionViewCell.swift */; };
+		D12B186F26A177880084A256 /* AutoListTwoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D12B186D26A177870084A256 /* AutoListTwoCollectionViewCell.xib */; };
+		D13BBFD426BA9A1100A2E876 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13BBFD326BA9A1100A2E876 /* AVKit.framework */; };
+		D143507A26B963D100280FA1 /* AutoListOneCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D143507826B963D100280FA1 /* AutoListOneCollectionReusableView.swift */; };
+		D143507B26B963D100280FA1 /* AutoListOneCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D143507926B963D100280FA1 /* AutoListOneCollectionReusableView.xib */; };
 		D15EB88520E9F9A7009626DE /* happySwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D15EB88320E9F9A7009626DE /* happySwift.xcdatamodeld */; };
 		D1632AB0265B96400025A2A3 /* extensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632AA4265B96400025A2A3 /* extensionUIColor.swift */; };
 		D1632AB1265B96400025A2A3 /* ExtensionUINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1632AA5265B96400025A2A3 /* ExtensionUINib.swift */; };
@@ -109,6 +117,14 @@
 		9C0ADBC8CB8C412AA22D6ED5 /* Pods-happySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-happySwift/Pods-happySwift.release.xcconfig"; sourceTree = "<group>"; };
 		B66E2F43DFCE421080F40600 /* Pods-happySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happySwift.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-happySwift/Pods-happySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		D115E7662672199600933A9E /* DSPagingListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSPagingListContainerView.swift; sourceTree = "<group>"; };
+		D12B186626A1759E0084A256 /* AutoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCollectionViewController.swift; sourceTree = "<group>"; };
+		D12B186826A177780084A256 /* AutoListOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoListOneCollectionViewCell.swift; sourceTree = "<group>"; };
+		D12B186926A177780084A256 /* AutoListOneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoListOneCollectionViewCell.xib; sourceTree = "<group>"; };
+		D12B186C26A177870084A256 /* AutoListTwoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoListTwoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D12B186D26A177870084A256 /* AutoListTwoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoListTwoCollectionViewCell.xib; sourceTree = "<group>"; };
+		D13BBFD326BA9A1100A2E876 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D143507826B963D100280FA1 /* AutoListOneCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoListOneCollectionReusableView.swift; sourceTree = "<group>"; };
+		D143507926B963D100280FA1 /* AutoListOneCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoListOneCollectionReusableView.xib; sourceTree = "<group>"; };
 		D15EB87920E9F9A7009626DE /* happySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15EB88420E9F9A7009626DE /* happySwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = happySwift.xcdatamodel; sourceTree = "<group>"; };
 		D15EB88B20E9F9A8009626DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13BBFD426BA9A1100A2E876 /* AVKit.framework in Frameworks */,
 				0D1763FBC7E281DF173E38DE /* Pods_happySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,9 +225,24 @@
 		3D69123730C1F7CF438B2D63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D13BBFD326BA9A1100A2E876 /* AVKit.framework */,
 				2E394ECEDE8672B6A0F27DA9 /* Pods_happySwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D12B186526A1756F0084A256 /* autoCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D12B186626A1759E0084A256 /* AutoCollectionViewController.swift */,
+				D12B186826A177780084A256 /* AutoListOneCollectionViewCell.swift */,
+				D12B186926A177780084A256 /* AutoListOneCollectionViewCell.xib */,
+				D12B186C26A177870084A256 /* AutoListTwoCollectionViewCell.swift */,
+				D12B186D26A177870084A256 /* AutoListTwoCollectionViewCell.xib */,
+				D143507826B963D100280FA1 /* AutoListOneCollectionReusableView.swift */,
+				D143507926B963D100280FA1 /* AutoListOneCollectionReusableView.xib */,
+			);
+			path = autoCollectionView;
 			sourceTree = "<group>";
 		};
 		D15EB87020E9F9A7009626DE = {
@@ -359,6 +391,7 @@
 		E8744DB52444B8A50079BC59 /* mvc */ = {
 			isa = PBXGroup;
 			children = (
+				D12B186526A1756F0084A256 /* autoCollectionView */,
 				D18542EE2671BB7700927EB0 /* nested */,
 				D1632B1F265BA6E00025A2A3 /* tms */,
 				E8744E002444BFE80079BC59 /* home */,
@@ -534,11 +567,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12B186F26A177880084A256 /* AutoListTwoCollectionViewCell.xib in Resources */,
+				D12B186B26A177780084A256 /* AutoListOneCollectionViewCell.xib in Resources */,
 				D1632B2A265BA8520025A2A3 /* HomeTableViewListCell.xib in Resources */,
 				E8744DEC2444B8A50079BC59 /* LaunchScreen.storyboard in Resources */,
 				D1632B31265BAA1A0025A2A3 /* TMSTableViewMenuCell.xib in Resources */,
 				E8744DEA2444B8A50079BC59 /* Assets.xcassets in Resources */,
 				D1632B15265B99180025A2A3 /* BaseNavigationBar.xib in Resources */,
+				D143507B26B963D100280FA1 /* AutoListOneCollectionReusableView.xib in Resources */,
 				E8744DEB2444B8A50079BC59 /* resources.bundle in Resources */,
 				E8744DED2444B8A50079BC59 /* Main.storyboard in Resources */,
 			);
@@ -593,6 +629,7 @@
 				D1632ABA265B96400025A2A3 /* extensionUILabel.swift in Sources */,
 				D1632B21265BA7230025A2A3 /* TMSTableViewRow.swift in Sources */,
 				E8744DFF2444BDBD0079BC59 /* MainNavigationController.swift in Sources */,
+				D12B186A26A177780084A256 /* AutoListOneCollectionViewCell.swift in Sources */,
 				D1BFC5CE26735715002B8B72 /* DSPagingMainCollectionView.swift in Sources */,
 				D1FAF87526034A440008D092 /* DSNibReusable.swift in Sources */,
 				E8744DFD2444BD5A0079BC59 /* MainTabBarController.swift in Sources */,
@@ -631,8 +668,10 @@
 				D1FAF87826034A440008D092 /* EnumCodable.swift in Sources */,
 				E8744DDE2444B8A50079BC59 /* HSProgressView.swift in Sources */,
 				E8744DE82444B8A50079BC59 /* ERJson.swift in Sources */,
+				D143507A26B963D100280FA1 /* AutoListOneCollectionReusableView.swift in Sources */,
 				E8744DD82444B8A50079BC59 /* HSObject.swift in Sources */,
 				D18543012671DDD300927EB0 /* NestedListViewController.swift in Sources */,
+				D12B186726A1759E0084A256 /* AutoCollectionViewController.swift in Sources */,
 				D1632AB6265B96400025A2A3 /* extensionUIImage.swift in Sources */,
 				D1FAF87626034A440008D092 /* UIView+dialogable.swift in Sources */,
 				D1FAF88926034AC10008D092 /* DSVMTableView.swift in Sources */,
@@ -650,6 +689,7 @@
 				D18543092672009200927EB0 /* DSPagingView.swift in Sources */,
 				D1632B2B265BA8520025A2A3 /* HomeViewController.swift in Sources */,
 				D1FAF87426034A440008D092 /* DSRouterParamsProtocol.swift in Sources */,
+				D12B186E26A177870084A256 /* AutoListTwoCollectionViewCell.swift in Sources */,
 				D1632B23265BA7530025A2A3 /* TMSViewController.swift in Sources */,
 				E8744DFA2444BCEF0079BC59 /* ViewController.swift in Sources */,
 				D1632AB9265B96400025A2A3 /* extensionUIAlertController.swift in Sources */,

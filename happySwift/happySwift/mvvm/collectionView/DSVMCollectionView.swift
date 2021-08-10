@@ -35,8 +35,8 @@ open class DSVMCollectionView: NSObject {
     public private(set) lazy var refreshHeader: MJRefreshNormalHeader = {
         let refreshHeader = MJRefreshNormalHeader.init()
         refreshHeader.setRefreshingTarget(self, refreshingAction: #selector(refreshAction))
-        refreshHeader.lastUpdatedTimeLabel.isHidden = true
-        refreshHeader.stateLabel.isHidden = true
+        refreshHeader.lastUpdatedTimeLabel?.isHidden = true
+        refreshHeader.stateLabel?.isHidden = true
         return refreshHeader
     }()
 

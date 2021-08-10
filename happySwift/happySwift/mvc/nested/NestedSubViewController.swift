@@ -26,7 +26,6 @@ class NestedSubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "个人中心"
         self.navigationController?.navigationBar.isTranslucent = false
         
         dataSource.titles = titles

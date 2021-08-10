@@ -14,11 +14,14 @@ target 'happySwift' do
     pod 'SnapKit', '~> 4.0.0'
   pod 'SDWebImage', '~> 4.4.8'
     pod 'AFNetworking', '~> 3.0.4'
-    pod 'MJRefresh', '~> 3.1.15.3'
+    #pod 'MJRefresh', '~> 3.1.15.3'
+    pod 'MJRefresh', '~> 3.5.0'
 
     pod 'AlicloudPush', '1.9.9.4'
     pod 'JXSegmentedView','~> 1.2.7'
     pod 'JXPagingView/Paging','~> 2.0.12'
+    
+
 
 end
 

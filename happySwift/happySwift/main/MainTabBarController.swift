@@ -15,6 +15,10 @@ class MainTabBarController: BaseTabBarController {
 
         // Do any additional setup after loading the view.
         
+        let autoVC = AutoCollectionViewController.init()
+        autoVC.title = "自适应"
+        autoVC.tabBarItem.title = autoVC.title
+
         let nestedVC = NestedSubViewController.init()
         nestedVC.title = "嵌套"
         nestedVC.tabBarItem.title = nestedVC.title
@@ -26,7 +30,7 @@ class MainTabBarController: BaseTabBarController {
         let vc = ViewController()
         vc.tabBarItem.title = "我的"
         
-        viewControllers = [nestedVC, homeVC, vc]
+        viewControllers = [autoVC, nestedVC, homeVC, vc]
     }
 }
 

@@ -24,7 +24,7 @@ PODS:
     - AlicloudUTDID
   - JXPagingView/Paging (2.0.13)
   - JXSegmentedView (1.2.7)
-  - MJRefresh (3.1.15.7)
+  - MJRefresh (3.5.0)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
@@ -35,7 +35,7 @@ DEPENDENCIES:
   - AlicloudPush (= 1.9.9.4)
   - JXPagingView/Paging (~> 2.0.12)
   - JXSegmentedView (~> 1.2.7)
-  - MJRefresh (~> 3.1.15.3)
+  - MJRefresh (~> 3.5.0)
   - SDWebImage (~> 4.4.8)
   - SnapKit (~> 4.0.0)
 
@@ -61,10 +61,10 @@ SPEC CHECKSUMS:
   AlicloudUtils: 66e0ba6ece62d7dd05e9dd95674b2c7811624c2f
   JXPagingView: 821ed274f09eaf2843a96c3a74e9d138e27d9730
   JXSegmentedView: eb1cad21f57c2543c00c3e08b8fd3c7ca54f5acd
-  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: b905f6b91602beb32d5f76318faa298d3aa950f3
+PODFILE CHECKSUM: fba31dabddc7370436a76506140b819fb0f06e25
 
 COCOAPODS: 1.9.1
